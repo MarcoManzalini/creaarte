@@ -1,0 +1,10 @@
+<a [href]="link">
+  <p-button
+    [label]="text"
+    [icon]="icon"
+    [severity]="'contrast'"
+    [rounded]="true"
+    [class]="white ? 'white' : 'black'"
+    (onClick)="clicked.emit()"
+  />
+</a>
