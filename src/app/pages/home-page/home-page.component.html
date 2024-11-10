@@ -1,2 +1,38 @@
 <app-hero [images]="heroImages"></app-hero>
-<app-chi-siamo></app-chi-siamo>ß
+<app-chi-siamo></app-chi-siamo>
+
+<!--Cornici-->
+<div class="w-full bg-black-alpha-90 border-round p-4" style="height: auto">
+  <app-outlined-button text="Cornici" />
+  <div class="w-full grid justify-content-between">
+    <p class="arboreto text-2xl   text-white-alpha-90 col-12 md:col">
+      Cornici
+    </p>
+    <div class="col flex justify-content-end">
+      <p class="text-gray-400 col-12 md:w-8">
+        Explore diverse range of styles, themes and technique brought to life by
+        talented artist from around the worlds
+      </p>
+    </div>
+  </div>
+  <app-carousel [sections]="corniciTab" [white]="false"/>
+</div>
+
+<!--Tecniche-->
+<div class="w-full border-round p-4" style="height: auto">
+  <app-outlined-button text="Tecniche" />
+  <div class="w-full grid justify-content-between">
+    <p class="arboreto text-2xl col-12 md:col">
+      Tecniche di lavorazione
+    </p>
+    <div class="col flex justify-content-end">
+      <p class="text-gray-400 col-12 md:w-8">
+        Explore diverse range of styles, themes and technique brought to life by
+        talented artist from around the worlds
+      </p>
+    </div>
+  </div>
+  <app-carousel [sections]="tecnicheTab" [white]="true"/>
+</div>
+
+

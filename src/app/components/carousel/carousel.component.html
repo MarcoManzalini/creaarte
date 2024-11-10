@@ -1,1 +1,27 @@
-<p>carousel works!</p>
+<p-tabView [class]="white ? 'white' : 'black'">
+  @for (section of sections; track $index) {
+  <p-tabPanel [header]="section.name" >
+    <p-carousel
+      [value]="section.items"
+      [numVisible]="4"
+      [numScroll]="1"
+      [circular]="true"
+      [responsiveOptions]="responsiveOptions"
+      [showIndicators]="false"
+      [showNavigators]="false"
+      [class]="white ? 'white' : 'black'"
+      class="gap-3"
+    >
+      <ng-template let-product pTemplate="item">
+        <app-tab-item [tabData]="product" [tipo]="section.name" [white]="!white"/>
+      </ng-template>
+    </p-carousel>
+  </p-tabPanel>
+  }
+
+  <div class="w-full flex justify-content-center align-items-center">
+    <app-outlined-button text="Scopri di più" icon="pi pi-arrow-right" [white]="!white"/>
+  </div>
+</p-tabView>
+
+

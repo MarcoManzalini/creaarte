@@ -1,1 +1,23 @@
-<p>tab-item works!</p>
+<div
+  class="border-round pt-3 px-3 flex flex-column justify-content-between"
+  [style]="'background: url(' + tabData.url + '); background-repeat: no-repeat;background-size: cover;'"
+  style="
+    height: 50dvh;
+    margin: 1rem;
+    max-width: 100%;
+  "
+>
+  <div class="w-full flex justify-content-between">
+    <app-outlined-button [text]="tipo" [rounded]="false" />
+    <app-outlined-button icon="pi pi-arrow-up-right" [rounded]="false"/>
+  </div>
+
+  <div>
+    <!-- @if(tabData.buttonText){
+    <app-outlined-button [text]="tabData.buttonText" />
+    } -->
+
+    <p class="arboreto text-white text-2xl">{{ tabData.name }}</p>
+    <p class=" h-2rem text-white ">{{ tabData.subText }}</p>
+  </div>
+</div>

@@ -3,8 +3,9 @@
     [label]="text"
     [icon]="icon"
     [severity]="'contrast'"
-    [rounded]="true"
+    [rounded]="rounded"
     [class]="white ? 'white' : 'black'"
     (onClick)="clicked.emit()"
+    class="border-round"
   />
 </a>

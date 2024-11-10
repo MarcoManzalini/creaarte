@@ -13,6 +13,7 @@ export class OutlinedButtonComponent {
   @Input() icon = '';
   @Input() link = '#';
   @Input() white = true;
+  @Input() rounded = true;
 
   @Output() clicked = new EventEmitter();
 }
