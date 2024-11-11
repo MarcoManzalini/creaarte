@@ -1,0 +1,41 @@
+<div class="w-full border-round p-4" style="height: auto">
+  <!-- Bottone Contatti -->
+
+  <div class="flex justify-content-center mb-4">
+    <app-outlined-button text="Contatti" [white]="false"  class="pointer-events-none"/>
+  </div>
+
+  <!-- Sezione principale con Mappa e Contatti -->
+  <div class="grid w-full align-items-center gap-2 mt-3">
+    <!-- Mappa Google -->
+    <div class="col-12 md:col flex justify-content-end">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.6460523973965!2d9.09914191266672!3d45.713810496002644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478699555c13a3a5%3A0xd12a7f26f04ab649!2sCREARTE%20di%20Alan%20Mosconi!5e1!3m2!1sit!2sit!4v1731269802368!5m2!1sit!2sit"
+        height="400"
+        width="100%"
+        class="border-round"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="col flex flex-column align-items-between">
+      <p class="arboreto text-xl font-bold mt-0">Crea Arte di Alan Mosconi</p>
+      <p-timeline [value]="events">
+        <ng-template pTemplate="marker" let-event>
+          <span
+            class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+          >
+            <i [class]="event.icon"></i>
+          </span>
+        </ng-template>
+
+        <ng-template pTemplate="content" class="p-1" let-event>
+          {{ event.status }}
+        </ng-template>
+      </p-timeline>
+    </div>
+  </div>
+</div>

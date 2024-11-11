@@ -42,10 +42,10 @@
 
 
 
-/* :host ::ng-deep .p-carousel-indicators{
+:host ::ng-deep .black .p-carousel-indicators{
 
   button{
-      background-color: white;
+      background-color: black;
       border-radius: 1rem;
       transition: width 0.4s ease-in-out, background-color 0.2s ease-in-out; 
     
@@ -55,4 +55,19 @@
           width: 5rem;
       }
   }
-} */
+}
+
+:host ::ng-deep .white .p-carousel-indicators{
+
+  button{
+      background-color: white;
+      border-radius: 1rem;
+      transition: width 0.4s ease-in-out, background-color 0.2s ease-in-out; 
+    
+
+      &[tabIndex="0"]{
+          background-color: black;
+          width: 5rem;
+      }
+  }
+}

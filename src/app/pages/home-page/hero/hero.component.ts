@@ -18,14 +18,17 @@ import { ButtonModule } from 'primeng/button';
 })
 export class HeroComponent {
   @Input() images: string[] = [];
+  corniciLink: string = '#cornici';
 
   activeIndex = 0;
 
   next() {
-    this.activeIndex = (this.activeIndex + 1 >= this.images.length ) ? 0 : this.activeIndex + 1;
+    this.activeIndex =
+      this.activeIndex + 1 >= this.images.length ? 0 : this.activeIndex + 1;
   }
 
   prev() {
-    this.activeIndex = (this.activeIndex - 1 < 0 ) ? this.images.length - 1 : this.activeIndex - 1;
+    this.activeIndex =
+      this.activeIndex - 1 < 0 ? this.images.length - 1 : this.activeIndex - 1;
   }
 }

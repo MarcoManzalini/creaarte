@@ -1,38 +1,96 @@
-<app-hero [images]="heroImages"></app-hero>
-<app-chi-siamo></app-chi-siamo>
+<app-hero id="hero" [images]="homePageData.heroImages"></app-hero>
+<app-chi-siamo id="chi-siamo"></app-chi-siamo>
 
 <!--Cornici-->
-<div class="w-full bg-black-alpha-90 border-round p-4" style="height: auto">
-  <app-outlined-button text="Cornici" />
+<div id="cornici" class="w-full bg-black-alpha-90 border-round p-4" style="height: auto">
+  <app-outlined-button text="Cornici"  class="pointer-events-none"/>
   <div class="w-full grid justify-content-between">
-    <p class="arboreto text-2xl   text-white-alpha-90 col-12 md:col">
-      Cornici
-    </p>
+    <p class="arboreto text-2xl text-white-alpha-90 col-12 md:col">Cornici</p>
     <div class="col flex justify-content-end">
-      <p class="text-gray-400 col-12 md:w-8">
+      <p class="text-gray-400 col-12 md:w-8 text-xl md:text-base">
         Explore diverse range of styles, themes and technique brought to life by
         talented artist from around the worlds
       </p>
     </div>
   </div>
-  <app-carousel [sections]="corniciTab" [white]="false"/>
+  <app-carousel [sections]="homePageData.corniciTab" [white]="false" />
+
+  <div class="w-full flex justify-content-center align-items-center">
+    <app-outlined-button link="lavori/cornici" text="Scopri di più" icon="pi pi-arrow-right"/><
+  </div>
+
 </div>
 
 <!--Tecniche-->
-<div class="w-full border-round p-4" style="height: auto">
-  <app-outlined-button text="Tecniche" />
+<div id="tecniche" class="w-full border-round p-4" style="height: auto">
+  <app-outlined-button text="Tecniche" [white]="false"  class="pointer-events-none"/>
   <div class="w-full grid justify-content-between">
-    <p class="arboreto text-2xl col-12 md:col">
-      Tecniche di lavorazione
-    </p>
+    <p class="arboreto text-2xl col-12 md:col">Tecniche di lavorazione</p>
     <div class="col flex justify-content-end">
-      <p class="text-gray-400 col-12 md:w-8">
+      <p class="col-12 md:w-8 text-xl md:text-base">
         Explore diverse range of styles, themes and technique brought to life by
         talented artist from around the worlds
       </p>
     </div>
   </div>
-  <app-carousel [sections]="tecnicheTab" [white]="true"/>
+  <app-carousel  [sections]="homePageData.tecnicheTab" [white]="true" />
+
+  <div class="w-full flex justify-content-center align-items-center">
+   <app-outlined-button link="lavori/tecniche" text="Scopri di più" icon="pi pi-arrow-right" [white]="false"/>
+  </div>
+
 </div>
 
+<!--Contattaci-->
+<app-contatti id="contatti"></app-contatti>
 
+<!--Footer-->
+<footer class="border-round bg-black-alpha-90 text-white p-2 md:p-8">
+  <div class="grid grid-cols-1 gap-1 md:gap-8">
+    <!-- Colonna principale: Crea Arte -->
+    <div class="md:col-5 col-12 space-y-2">
+      <h2 class="text-lg font-bold text-white">CREA ARTE di Alan Mosconi</h2>
+      <p class="text-gray-400">Via G. Mameli, 18, 22063 Cantù CO</p>
+    </div>
+
+    <!-- Colonna 1: Contatti -->
+    <div class="col-12 md:col">
+      <ul class="list-none text-gray-400">
+        <li class="mb-3"><h3 class="text-md font-semibold text-white">Contatti</h3></li>
+        <li class="mb-3"><i class="pi pi-phone mr-2"></i>+39 012 3456789</li>
+        <li class="mb-3"><i class="pi pi-envelope mr-2"></i>email</li>
+        <li class="mb-3"><i class="pi pi-facebook mr-2"></i>Account Facebook</li>
+        <li class=""><i class="pi pi-instagram mr-2"></i>Account Instagram</li>
+      </ul>
+    </div>
+
+    <!-- Colonna 2: About Us -->
+    <div class="md:col col-12">
+      <ul class="list-none text-gray-400">
+        <li class="mb-3"><h3 class="text-md font-semibold text-white">About Us</h3></li>
+        <li class="mb-3">Storia</li>
+        <li class="mb-3">Vision</li>
+        <li class="mb-3">Il nostro team</li>
+        <li class="">Blog</li>
+      </ul>
+    </div>
+
+    <!-- Colonna 3: Company -->
+    <div class="md:col col-12">
+      <ul class="list-none text-gray-400">
+        <li class="mb-3"><h3 class="text-md font-semibold text-white">Company</h3></li>
+        <li class="mb-3">Prezzi e servizi</li>
+        <li class="mb-3">Partnership</li>
+        <li class="mb-3">Opportunità di lavoro</li>
+        <li class="">Press Kit</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div
+    class="text-center py-4 mt-8 border-t border-gray-700 text-gray-500 text-sm"
+  >
+    <p>2024 © All Rights Reserved | Alan Mosconi</p>
+  </div>
+</footer>

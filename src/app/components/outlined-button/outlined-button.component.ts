@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-outlined-button',
   standalone: true,
-  imports: [ButtonModule],
+  imports: [ButtonModule,RouterLink],
   templateUrl: './outlined-button.component.html',
   styleUrl: './outlined-button.component.scss'
 })

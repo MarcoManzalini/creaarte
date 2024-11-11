@@ -15,7 +15,13 @@
   
     <!-- Template per posizionare items alla fine della navbar -->
     <ng-template pTemplate="end">
-      <p-menubar [model]="items" [style]="{ border: 'none', background: 'white'}"></p-menubar>
+      <p-menubar [model]="items" [style]="{ border: 'none', background: 'white'}">
+        <ng-template pTemplate="item" let-item>
+          <a [href]="item.route" class="p-menuitem-link">
+            <span class="ml-2">{{ item.label }}</span>
+        </a>
+        </ng-template>
+      </p-menubar>
     </ng-template>
   </p-menubar>
   
