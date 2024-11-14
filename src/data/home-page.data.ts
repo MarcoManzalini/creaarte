@@ -99,7 +99,7 @@ export const homePage = {
 
   corniciTab: [
     {
-      name: 'Antiche',
+      name: '500',
       items: [
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
@@ -121,8 +121,102 @@ export const homePage = {
           buttonText: 'Scopri di più',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
         },
+      ],
+    },
+    {
+      name: '600',
+      items: [
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          name: 'Cornice Barocca',
+          buttonText: 'Scopri di più',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          name: 'Cornice Rinascimentale',
+          buttonText: 'Scopri di più',
+          subText:
+            'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          name: 'Cornice Neoclassica',
+          buttonText: 'Scopri di più',
+          subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
+        },
+      ],
+    },
+    {
+      name: '700',
+      items: [
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          name: 'Cornice Barocca',
+          buttonText: 'Scopri di più',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          name: 'Cornice Rinascimentale',
+          buttonText: 'Scopri di più',
+          subText:
+            'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          name: 'Cornice Neoclassica',
+          buttonText: 'Scopri di più',
+          subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
+        },
+      ],
+    },
+    {
+      name: '800',
+      items: [
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          name: 'Cornice Barocca',
+          buttonText: 'Scopri di più',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          name: 'Cornice Rinascimentale',
+          buttonText: 'Scopri di più',
+          subText:
+            'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          name: 'Cornice Neoclassica',
+          buttonText: 'Scopri di più',
+          subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
+        },
+      ],
+    },
+    {
+      name: '900',
+      items: [
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          name: 'Cornice Barocca',
+          buttonText: 'Scopri di più',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          name: 'Cornice Rinascimentale',
+          buttonText: 'Scopri di più',
+          subText:
+            'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
+        },
+        {
+          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
           name: 'Cornice Neoclassica',
           buttonText: 'Scopri di più',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
@@ -147,12 +241,6 @@ export const homePage = {
         },
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2019/07/cornici-in-argento.jpg',
-          name: 'Cornice Scandinava',
-          buttonText: 'Scopri di più',
-          subText: 'Stile nordico con materiali naturali e colori chiari.',
-        },
-        {
-          url: 'https://img.freepik.com/premium-photo/vintage-photo-frame-black-background_156881-12065.jpg',
           name: 'Cornice Scandinava',
           buttonText: 'Scopri di più',
           subText: 'Stile nordico con materiali naturali e colori chiari.',

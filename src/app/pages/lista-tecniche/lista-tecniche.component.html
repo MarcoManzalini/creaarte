@@ -1,0 +1,11 @@
+<p>lista-tecniche works!</p>
+<pre>{{tecniche | json}}</pre>
+
+@for(tecnica of tecniche; track $index){
+    
+    @if($index % 2 === 0){
+        <!--Un componente-->
+    }@else {
+        <!--Opposto-->
+    }
+}
