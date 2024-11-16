@@ -1,0 +1,25 @@
+.image-container {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+}
+
+:host ::ng-deep .p-galleria-indicators {
+  button {
+    background-color: black;
+    border-radius: 1rem;
+    transition: width 0.4s ease-in-out, background-color 0.2s ease-in-out;
+    height: 0.5rem;
+  }
+
+  li {
+    &[aria-selected="true"] {
+      button {
+        background-color: white !important; /* rimuovi !important dopo i test */
+        width: 5rem !important; /* rimuovi !important dopo i test */
+      }
+    }
+  }
+}

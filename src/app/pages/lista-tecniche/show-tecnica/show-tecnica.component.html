@@ -1,1 +1,42 @@
-<p>show-tecnica works!</p>
+<div class="grid gap-4 m-4">
+  @if(inversed){
+  <div class="col-12 md:col border-round bg-black-alpha-90">
+    <p-galleria
+      [value]="tecnica.immagini"
+      [showIndicators]="true"
+      [showItemNavigators]="true"
+      [showThumbnails]="false"
+      [autoPlay]="true"
+      [circular]="true"
+    >
+      <ng-template pTemplate="item" let-item>
+        <div
+          class="image-container border-round cover relative"
+          [style.backgroundImage]="'url(' + item + ')'"
+        ></div>
+      </ng-template>
+    </p-galleria>
+  </div>
+  <div class="col-12 md:col border-round p-1" style="background-color: #f6f6f6">
+    <h3>{{ tecnica.nome }}</h3>
+    <p [innerHTML]="descrizioneSanitezed(tecnica.descrizione)"></p>
+  </div>
+  }@else {
+  <div class="col-12 md:col border-round p-1" style="background-color: #f6f6f6">
+    <h3>{{ tecnica.nome }}</h3>
+    <p [innerHTML]="descrizioneSanitezed(tecnica.descrizione)"></p>
+  </div>
+
+  <div class="col-12 md:col border-round">
+    <p-galleria
+      [value]="tecnica.immagini"
+      [showIndicators]="true"
+      [showThumbnails]="false"
+    >
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+      </ng-template>
+    </p-galleria>
+  </div>
+  }
+</div>
