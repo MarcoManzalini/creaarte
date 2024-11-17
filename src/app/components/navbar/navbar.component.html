@@ -1,27 +1,37 @@
-<p-menubar class="bg-white" [style]="{ border: 'none', background:'white' }">
-    <!-- Template per l'inizio della navbar -->
-    <ng-template pTemplate="start">
-      <div class="flex align-items-center gap-1">
-        <!-- Quadrato oro -->
-        <div class="h-2rem w-2rem bg-yellow-300"></div>
-  
-        <!-- Scritta -->
-        <div class="flex flex-column">
-          <span>CreaArte</span>
-          <span>di Alan Mosconi</span>
-        </div>
+<p-menubar class="bg-white sticky top-0 z-1" [style]="{ border: 'none', background: 'white' }" [model]="items">
+  <!-- Template per l'inizio della navbar -->
+  <ng-template pTemplate="start">
+    <div class="flex align-items-center gap-1">
+      <!-- Quadrato oro -->
+      <div class="h-2rem w-2rem bg-yellow-300"></div>
+      <!-- Scritta -->
+      <div class="flex flex-column">
+        <span>CreaArte</span>
+        <span>di Alan Mosconi</span>
       </div>
-    </ng-template>
-  
-    <!-- Template per posizionare items alla fine della navbar -->
-    <ng-template pTemplate="end">
-      <p-menubar [model]="items" [style]="{ border: 'none', background: 'white'}">
+    </div>
+  </ng-template>
+
+  <!-- Elementi del menu mobile -->
+  <ng-template pTemplate="item" let-item>
+    <a 
+      *ngIf="isMobile"
+      [href]="item.route" 
+      class="p-menuitem-link">
+      <span class="ml-2">{{ item.label }}</span>
+    </a>
+  </ng-template>
+
+  <!-- Menu desktop -->
+  <ng-template pTemplate="end">
+    <div class="hidden md:block">
+      <p-menubar [model]="items" [style]="{ border: 'none', background: 'white' }">
         <ng-template pTemplate="item" let-item>
           <a [href]="item.route" class="p-menuitem-link">
             <span class="ml-2">{{ item.label }}</span>
-        </a>
+          </a>
         </ng-template>
       </p-menubar>
-    </ng-template>
-  </p-menubar>
-  
+    </div>
+  </ng-template>
+</p-menubar>

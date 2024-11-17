@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MenubarModule } from 'primeng/menubar';
 import { HeroComponent } from '../../pages/home-page/hero/hero.component';
 
@@ -33,4 +33,14 @@ export class NavbarComponent {
       route: '#contatti'
     },
   ];
+  isMobile: boolean = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.updateMenuVisibility();
+  }
+
+  private updateMenuVisibility() {
+    this.isMobile = window.innerWidth < 768; // Modifica breakpoint se necessario
+  }
 }
