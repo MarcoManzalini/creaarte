@@ -5,6 +5,8 @@
 }
 
 
+
+
 :host ::ng-deep .black .p-tabview-nav {
   background-color: #1a1a1a;
   display: flex;
@@ -70,4 +72,21 @@
           width: 5rem;
       }
   }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  :host ::ng-deep .black .p-tabview-nav {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+
+  :host ::ng-deep .white .p-tabview-nav {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
 }
