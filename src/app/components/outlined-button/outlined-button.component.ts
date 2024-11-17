@@ -12,7 +12,7 @@ import { ButtonModule } from 'primeng/button';
 export class OutlinedButtonComponent {
   @Input() text = '';
   @Input() icon = '';
-  @Input() link = '#';
+  @Input() link;
   @Input() white = true;
   @Input() rounded = true;
 

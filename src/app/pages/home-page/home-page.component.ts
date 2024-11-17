@@ -6,6 +6,7 @@ import { CarouselComponent } from '../../components/carousel/carousel.component'
 import { OutlinedButtonComponent } from '../../components/outlined-button/outlined-button.component';
 import { ContattiComponent } from "./contatti/contatti.component";
 import { homePage } from '../../../data/home-page.data';
+import { TabItemComponent } from "../../components/tab-item/tab-item.component";
 
 @Component({
   selector: 'app-home-page',

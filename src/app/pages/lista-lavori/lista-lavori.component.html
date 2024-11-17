@@ -1,1 +1,23 @@
-<pre>{{cornici | json}}</pre>
+<p-tabView class="white">
+  <p-tabPanel header="Tutte"> 
+    <div class="grid bg-black-alpha-90 border-round">
+    @for(cornice of cornici; track $index){
+      <div class="col md:col-4 lg:col-3">
+        <app-tab-item [tabData]="{'url': cornice.immagine, 'name':cornice.nome, 'subText': cornice.descrizione}" [tipo]="cornice.epoca.nome"/>
+      </div>
+    }
+    </div>
+  </p-tabPanel>
+  @for (group of groupedCornici; track $index) {
+  <p-tabPanel [header]="group.epoca.nome">
+    <div class="grid bg-black-alpha-90 border-round">
+      @for (cornice of group.cornici; track $index) {
+      <div class="col md:col-4 lg:col-3">
+        <app-tab-item [tabData]="{'url': cornice.immagine, 'name':cornice.nome, 'subText': cornice.descrizione}" [tipo]="group.epoca.nome"/>
+      </div>
+      }
+    </div>
+  </p-tabPanel>
+  }
+</p-tabView>
+

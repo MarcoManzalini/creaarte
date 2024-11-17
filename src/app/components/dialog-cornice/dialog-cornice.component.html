@@ -1,0 +1,23 @@
+@if(openCornice){
+    <p-dialog
+      header="Dettagli Cornice"
+      [modal]="true"
+      [(visible)]="openDialog"
+      [style]="{ width: '40rem' }"
+      (visibleChange)="dialogClose.emit($event)"
+    >
+      <div
+        class="w-full flex justify-content-center align-items-center border-round"
+      >
+        <p-image [src]="openCornice.url" [preview]="true" alt="Image" />
+      </div>
+    
+      <div>
+        <h3>{{ openCornice.name }}</h3>
+        <p>
+          {{ openCornice.subText }}
+        </p>
+      </div>
+    </p-dialog>
+    }
+    

@@ -1,0 +1,73 @@
+:host ::ng-deep .black .p-tabview,
+::ng-deep .black .p-tabview-panels,
+::ng-deep .black .p-tabview-panel {
+  background-color: #1a1a1a;
+}
+
+
+:host ::ng-deep .black .p-tabview-nav {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+
+  a {
+    color: white;
+    background-color: #1a1a1a;
+
+    &[aria-selected="true"] {
+      border: 2px solid white;
+    }
+  }
+}
+
+:host ::ng-deep .white .p-tabview-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a1a;
+  border: none;
+
+  a {
+    color: #1a1a1a;
+    background-color: none;
+
+    &[aria-selected="true"] {
+      border: 2px solid #1a1a1a;
+    }
+  }
+}
+
+
+
+:host ::ng-deep .black .p-carousel-indicators{
+
+  button{
+      background-color: black;
+      border-radius: 1rem;
+      transition: width 0.4s ease-in-out, background-color 0.2s ease-in-out; 
+    
+
+      &[tabIndex="0"]{
+          background-color: white;
+          width: 5rem;
+      }
+  }
+}
+
+:host ::ng-deep .white .p-carousel-indicators{
+
+  button{
+      background-color: white;
+      border-radius: 1rem;
+      transition: width 0.4s ease-in-out, background-color 0.2s ease-in-out; 
+    
+
+      &[tabIndex="0"]{
+          background-color: black;
+          width: 5rem;
+      }
+  }
+}

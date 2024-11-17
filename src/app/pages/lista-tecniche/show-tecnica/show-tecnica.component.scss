@@ -6,7 +6,24 @@
   width: 80%;
 }
 
-:host ::ng-deep .p-galleria-indicators {
+@media screen and (max-width: 450px){
+    .image-container {
+        height: 25dvh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 80%;
+      }
+}
+
+
+:host ::ng-deep .white .p-galleria{
+    &[role="navigation"]{
+        color: black;
+    }
+}
+
+:host ::ng-deep .white .p-galleria-indicators {
   button {
     background-color: black;
     border-radius: 1rem;
@@ -23,3 +40,21 @@
     }
   }
 }
+
+:host ::ng-deep .black .p-galleria-indicators {
+    button {
+      background-color: white;
+      border-radius: 1rem;
+      transition: width 0.4s ease-in-out, background-color 0.2s ease-in-out;
+      height: 0.5rem;
+    }
+  
+    li {
+      &[aria-selected="true"] {
+        button {
+          background-color: black !important; /* rimuovi !important dopo i test */
+          width: 5rem !important; /* rimuovi !important dopo i test */
+        }
+      }
+    }
+  }

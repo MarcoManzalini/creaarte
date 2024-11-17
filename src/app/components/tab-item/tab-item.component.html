@@ -9,15 +9,13 @@
 >
   <div class="w-full flex justify-content-between">
     <app-outlined-button [text]="tipo" [rounded]="false" />
-    <app-outlined-button icon="pi pi-arrow-up-right" [rounded]="false"/>
+    <app-outlined-button icon="pi pi-arrow-up-right" [rounded]="false" (clicked)="open()"/>
   </div>
 
   <div>
-    <!-- @if(tabData.buttonText){
-    <app-outlined-button [text]="tabData.buttonText" />
-    } -->
-
     <p class="arboreto text-white text-2xl">{{ tabData.name }}</p>
     <p class=" h-2rem text-white ">{{ tabData.subText }}</p>
   </div>
 </div>
+
+<app-dialog-cornice [openCornice]="tabData" [openDialog]="dialogVisible" (dialogClose)="dialogVisible = !dialogVisible"/>

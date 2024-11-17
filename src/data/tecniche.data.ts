@@ -1,3 +1,5 @@
+import * as _ from 'lodash';
+
 // Definizione delle interfacce
 interface MacrotipoTecnica {
   id: number;
@@ -20,13 +22,24 @@ export interface exportedTecnica {
   immagini: string[];
 }
 
+export interface GroupedTecniche {
+  macrotipo: MacrotipoTecnica;
+  dati: groupedItem[];
+}
+
+export interface groupedItem {
+  id: number;
+  nome: string;
+  descrizione: string;
+  immagini: string[];
+}
+
 // Lista di macrotipi di tecniche (Doratura, Intaglio, Restauro)
 const macrotipiTecnica: MacrotipoTecnica[] = [
   { id: 1, nome: 'Doratura' },
   { id: 2, nome: 'Intaglio' },
   { id: 3, nome: 'Restauro' },
 ];
-
 
 // Lista di tecniche di esempio
 const tecniche: Tecnica[] = [
@@ -41,7 +54,7 @@ const tecniche: Tecnica[] = [
       'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
       'https://cdn.prod.website-files.com/63eb94f6c942bd7a715f2f57/641abcaba689308c4776a412_Doratura%20caratteristiche%20e%20tecniche%20nel%20restauro%20e%20nella%20decorazione.jpg',
       'https://www.dorarte.com/images/doratura/doratura-a-missione.jpg',
-      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg'
+      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg',
     ],
   },
   {
@@ -54,7 +67,7 @@ const tecniche: Tecnica[] = [
       'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
       'https://cdn.prod.website-files.com/63eb94f6c942bd7a715f2f57/641abcaba689308c4776a412_Doratura%20caratteristiche%20e%20tecniche%20nel%20restauro%20e%20nella%20decorazione.jpg',
       'https://www.dorarte.com/images/doratura/doratura-a-missione.jpg',
-      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg'
+      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg',
     ],
   },
   {
@@ -67,7 +80,7 @@ const tecniche: Tecnica[] = [
       'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
       'https://cdn.prod.website-files.com/63eb94f6c942bd7a715f2f57/641abcaba689308c4776a412_Doratura%20caratteristiche%20e%20tecniche%20nel%20restauro%20e%20nella%20decorazione.jpg',
       'https://www.dorarte.com/images/doratura/doratura-a-missione.jpg',
-      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg'
+      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg',
     ],
   },
   {
@@ -80,7 +93,7 @@ const tecniche: Tecnica[] = [
       'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
       'https://cdn.prod.website-files.com/63eb94f6c942bd7a715f2f57/641abcaba689308c4776a412_Doratura%20caratteristiche%20e%20tecniche%20nel%20restauro%20e%20nella%20decorazione.jpg',
       'https://www.dorarte.com/images/doratura/doratura-a-missione.jpg',
-      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg'
+      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg',
     ],
   },
 
@@ -95,7 +108,7 @@ const tecniche: Tecnica[] = [
       'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
       'https://www.megahub.it/wordpress/wp-content/uploads/2017/06/incisione.png',
       'https://www.tavolobello.com/public/Files/rif000002/627/legno-intagliato.jpg',
-      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg'
+      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg',
     ],
   },
   {
@@ -108,7 +121,7 @@ const tecniche: Tecnica[] = [
       'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
       'https://www.megahub.it/wordpress/wp-content/uploads/2017/06/incisione.png',
       'https://www.tavolobello.com/public/Files/rif000002/627/legno-intagliato.jpg',
-      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg'
+      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg',
     ],
   },
   {
@@ -121,7 +134,7 @@ const tecniche: Tecnica[] = [
       'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
       'https://www.megahub.it/wordpress/wp-content/uploads/2017/06/incisione.png',
       'https://www.tavolobello.com/public/Files/rif000002/627/legno-intagliato.jpg',
-      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg'
+      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg',
     ],
   },
   {
@@ -134,7 +147,7 @@ const tecniche: Tecnica[] = [
       'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
       'https://www.megahub.it/wordpress/wp-content/uploads/2017/06/incisione.png',
       'https://www.tavolobello.com/public/Files/rif000002/627/legno-intagliato.jpg',
-      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg'
+      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg',
     ],
   },
 
@@ -148,7 +161,7 @@ const tecniche: Tecnica[] = [
       'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
       'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
       'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg'
+      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
     ],
   },
   {
@@ -160,7 +173,7 @@ const tecniche: Tecnica[] = [
       'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
       'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
       'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg'
+      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
     ],
   },
   {
@@ -173,7 +186,7 @@ const tecniche: Tecnica[] = [
       'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
       'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
       'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg'
+      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
     ],
   },
   {
@@ -186,22 +199,52 @@ const tecniche: Tecnica[] = [
       'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
       'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
       'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg'
+      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
     ],
   },
 ];
 
-
+/**
+ *
+ * @returns tutte le tecniche formattate in maniera corretta
+ */
 export const getTecniche = () => {
   const tecnicheExport: exportedTecnica[] = tecniche.map((tecnica) => {
     return {
       ...tecnica,
-      macrotipo: macrotipiTecnica[tecnica.id - 1]
-    }
-  })
+      macrotipo: macrotipiTecnica[tecnica.macrotipoId - 1],
+    };
+  });
 
   return tecnicheExport;
-}
+};
+
+/**
+ *
+ * @returns Le tecniche raggruppate per il macrotipo
+ */
+export const getTenicheGrouped = () => {
+  const tecniche = getTecniche();
+
+  // Raggruppa i dati per id del macrotipo
+  const grouped = _.groupBy(
+    tecniche,
+    (item:exportedTecnica) => item.macrotipo.id
+  ) as Record<string, exportedTecnica[]>;
+
+  // Trasforma il risultato in un array di nuovoTipo
+  return Object.values(grouped).map((group) => {
+    const { macrotipo } = group[0]; // Il macrotipo è lo stesso per tutti gli elementi del gruppo
+    const dati = group.map(({ id, nome, descrizione, immagini }) => ({
+      id,
+      nome,
+      descrizione,
+      immagini,
+    }));
+
+    return { macrotipo, dati };
+  });
+};
 
 // Esportazione delle liste per usarle altrove
 export { macrotipiTecnica, tecniche };

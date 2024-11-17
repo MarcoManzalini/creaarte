@@ -6,6 +6,6 @@ export interface HomeTabItem {
 export interface tabItem {
   url: string;
   name: string;
-  buttonText: string;
+  buttonText?: string;
   subText: string;
 }

@@ -1,5 +1,9 @@
-@for(tecnica of tecniche; track $index){
-
-<app-show-tecnica [tecnica]="tecnica" [inversed]="$index % 2 === 0" />
-
-}
+<p-tabView class="white">
+  @for(group of groupedTecniche; track $index){
+  <p-tabPanel [header]="group.macrotipo.nome">
+    @for(item of group.dati; track $index){
+    <app-show-tecnica [tecnica]="item" [inversed]="$index % 2 === 0" />
+    }
+  </p-tabPanel>
+  }
+</p-tabView>
