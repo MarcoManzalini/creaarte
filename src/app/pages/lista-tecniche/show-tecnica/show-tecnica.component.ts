@@ -18,9 +18,7 @@ export class ShowTecnicaComponent {
   @Input() inversed: boolean = false;
 
 
-  constructor(private sanitizer: DomSanitizer) {
-    console.log(this.tecnica)
-  }
+  constructor(private sanitizer: DomSanitizer) {}
 
   descrizioneSanitezed(descrizione: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(descrizione);

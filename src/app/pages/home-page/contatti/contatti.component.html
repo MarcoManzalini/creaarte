@@ -2,13 +2,12 @@
   <!-- Bottone Contatti -->
 
   <div class="flex justify-content-center mb-4">
-  <!--   <app-outlined-button text="Contatti" [white]="false"  class="pointer-events-none"/> -->
-  <p class="arboreto text-2xl col-12 md:col">Contatti</p>
+    <!--   <app-outlined-button text="Contatti" [white]="false"  class="pointer-events-none"/> -->
+    <p class="arboreto text-2xl col-12 md:col">Contatti</p>
   </div>
 
   <!-- Sezione principale con Mappa e Contatti -->
   <div class="grid w-full align-items-center gap-2 mt-3">
-    
     <!-- Mappa Google -->
     <div class="col-12 md:col flex justify-content-end">
       <iframe
@@ -27,15 +26,55 @@
       <p class="arboreto text-xl font-bold mt-0">Crea Arte di Alan Mosconi</p>
       <p-timeline [value]="events">
         <ng-template pTemplate="marker" let-event>
+          @if(event.status.includes('@')){
+          <a
+            [href]="'mailto:' + event.status"
+            class="no-underline text-black-alpha-90"
+          >
+            <span
+              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+            >
+              <i [class]="event.icon"></i>
+            </span>
+          </a>
+          }@else if(event.status.includes('+')){
+          <a
+            [href]="'tel:' + event.status"
+            class="no-underline text-black-alpha-90"
+          >
+            <span
+              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+            >
+              <i [class]="event.icon"></i>
+            </span>
+          </a>
+          }@else{
           <span
             class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
           >
             <i [class]="event.icon"></i>
           </span>
+          }
         </ng-template>
 
         <ng-template pTemplate="content" class="p-1" let-event>
+          @if(event.status.includes('@')){
+          <a
+            [href]="'mailto:' + event.status"
+            class="no-underline text-black-alpha-90"
+          >
+            {{ event.status }}
+          </a>
+          }@else if(event.status.includes('+')){
+          <a
+            [href]="'tel:' + event.status"
+            class="no-underline text-black-alpha-90"
+          >
+            {{ event.status }}
+          </a>
+          }@else{
           {{ event.status }}
+          }
         </ng-template>
       </p-timeline>
     </div>

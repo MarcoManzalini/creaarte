@@ -6,8 +6,8 @@ export const homePage = {
   ],
 
   tecnicheTab: [
-    {
-      name: 'Doratura',
+   /*  {
+      name: 'T',
       items: [
         {
           url: 'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
@@ -79,6 +79,26 @@ export const homePage = {
         {
           url: 'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
           name: 'Restauro Mobili Antichi',
+          subText: 'Recupero e conservazione di mobili e manufatti d’epoca.',
+        },
+      ],
+    }, */
+    {
+      name: 'Cosa offriamo?',
+      items: [
+        {
+          url: 'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
+          name: 'Doratura',
+          subText: 'Tecnica di doratura su superfici lisce e sagomate.',
+        },
+        {
+          url: 'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
+          name: 'Intaglio',
+          subText: 'Tecniche di intaglio su legno per sculture e decorazioni.',
+        },
+        {
+          url: 'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
+          name: 'Restauro',
           subText: 'Recupero e conservazione di mobili e manufatti d’epoca.',
         },
       ],

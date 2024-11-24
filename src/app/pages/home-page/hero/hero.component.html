@@ -10,13 +10,21 @@
     </div>
 
     <div class="w-full grid p-4">
-      <div class="text-white md:col-4 p-4 flex justify-content-start line-height-3 text-400">
+      <div
+        class="text-white md:col-4 p-4 flex justify-content-start line-height-3 text-400"
+      >
         Immerese yourself in the capitvating story behind each artwork, as our
         artists draw ispiration from culters, nature and everyday life
       </div>
 
       <div class="col md:col-4 flex justify-content-center align-items-end">
-        <app-outlined-button [link]="corniciLink" text="Visita le opere" />
+        <a href="#cornici">
+          <app-outlined-button
+            text="Cornici"
+            class="mr-2"
+          ></app-outlined-button>
+        </a>
+        
       </div>
 
       <div class="col md:col-4 flex justify-content-end align-items-end">

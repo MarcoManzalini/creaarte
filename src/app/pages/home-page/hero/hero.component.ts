@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { OutlinedButtonComponent } from '../../../components/outlined-button/outlined-button.component';
 import { ButtonModule } from 'primeng/button';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
@@ -11,14 +12,13 @@ import { ButtonModule } from 'primeng/button';
     GalleriaModule,
     CommonModule,
     OutlinedButtonComponent,
-    ButtonModule,
+    ButtonModule
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
   @Input() images: string[] = [];
-  corniciLink: string = '#cornici';
 
   activeIndex = 0;
 
