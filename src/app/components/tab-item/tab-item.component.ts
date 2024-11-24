@@ -14,6 +14,7 @@ export class TabItemComponent {
   @Input() tabData: tabItem;
   @Input() tipo: string = '';
   @Input() white: boolean = false
+  @Input() dialogOpen: boolean = true;
 
   dialogVisible: boolean = false;
 

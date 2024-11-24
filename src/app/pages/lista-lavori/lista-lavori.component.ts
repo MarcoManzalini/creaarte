@@ -8,8 +8,8 @@ import {
 } from '../../../data/cornici.data';
 import { CommonModule } from '@angular/common';
 import { TabViewModule } from 'primeng/tabview';
-import { OutlinedButtonComponent } from '../../components/outlined-button/outlined-button.component';
 import { TabItemComponent } from "../../components/tab-item/tab-item.component";
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-lista-lavori',
@@ -21,14 +21,19 @@ import { TabItemComponent } from "../../components/tab-item/tab-item.component";
 export class ListaLavoriComponent implements OnInit {
   cornici: ExportedCornice[] = [];
   groupedCornici: GroupedCornice[] = [];
-
   dialogVisible: boolean = false;
   openCornice: Cornice;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.cornici = getCorniciData();
     this.groupedCornici = groupCorniciByEpoca();
 
-    console.log(this.cornici)
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
   }
 }

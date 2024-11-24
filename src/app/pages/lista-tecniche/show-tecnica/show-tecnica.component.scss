@@ -1,18 +1,10 @@
 .image-container {
   height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 80%;
 }
 
 @media screen and (max-width: 450px){
     .image-container {
         height: 25dvh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 80%;
       }
 }
 

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { exportedTecnica, getTecniche, getTenicheGrouped, GroupedTecniche } from '../../../data/tecniche.data';
+import { getTenicheGrouped, GroupedTecniche } from '../../../data/tecniche.data';
 import { CommonModule } from '@angular/common';
 import { ShowTecnicaComponent } from "./show-tecnica/show-tecnica.component";
 import { TabViewModule } from 'primeng/tabview';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-lista-tecniche',
@@ -14,8 +15,17 @@ import { TabViewModule } from 'primeng/tabview';
 export class ListaTecnicheComponent implements OnInit {
   groupedTecniche: GroupedTecniche[] = [];
 
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
     this.groupedTecniche = getTenicheGrouped();
-    console.log(this.groupedTecniche)
+    
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
+
+
   }
 }

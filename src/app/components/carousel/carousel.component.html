@@ -13,7 +13,7 @@
       class="gap-3"
     >
       <ng-template let-product pTemplate="item">
-        <app-tab-item [tabData]="product" [tipo]="section.name" [white]="!white"/>
+        <app-tab-item [tabData]="product" [tipo]="section.name" [white]="!white" [dialogOpen]="!white"/>
       </ng-template>
     </p-carousel>
   </p-tabPanel>
