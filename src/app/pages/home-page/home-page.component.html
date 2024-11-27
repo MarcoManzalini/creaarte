@@ -2,45 +2,59 @@
 <app-chi-siamo id="chi-siamo"></app-chi-siamo>
 
 <!--Cornici-->
-<div id="cornici" class="w-full bg-black-alpha-90 border-round p-4" style="height: auto">
- <!--  <app-outlined-button text="Cornici"  class="pointer-events-none"/> -->
+<div
+  id="cornici"
+  class="w-full bg-black-alpha-90 border-round p-4"
+  style="height: auto"
+>
+  <!--  <app-outlined-button text="Cornici"  class="pointer-events-none"/> -->
   <div class="w-full grid justify-content-between">
     <p class="arboreto text-2xl text-white-alpha-90 col-12 md:col">Cornici</p>
     <div class="col flex justify-content-end">
       <p class="text-gray-400 col-12 md:w-8 text-xl md:text-base">
-        Explore diverse range of styles, themes and technique brought to life by
-        talented artist from around the worlds
+        Scopri l'arte senza tempo delle cornici dai capolavori del Rinascimento
+        alle creazioni moderne, ogni cornice è riportata al suo splendore
+        originale o creata su misura per esaltare il valore dell'opera che
+        racchiude.
       </p>
     </div>
   </div>
   <app-carousel [sections]="homePageData.corniciTab" [white]="false" />
 
   <div class="w-full flex justify-content-center align-items-center">
-    <app-outlined-button link="cornici" text="Scopri di più" icon="pi pi-arrow-right"/><
+    <app-outlined-button
+      link="cornici"
+      text="Scopri di più"
+      icon="pi pi-arrow-right"
+    /><
   </div>
-
 </div>
 
 <!--Tecniche-->
 <div id="tecniche" class="w-full border-round p-4" style="height: auto">
- <!--  <app-outlined-button text="Tecniche" [white]="false"  class="pointer-events-none"/> -->
+  <!--  <app-outlined-button text="Tecniche" [white]="false"  class="pointer-events-none"/> -->
   <div class="w-full grid justify-content-between">
     <p class="arboreto text-2xl col-12 md:col">Tecniche</p>
     <div class="col flex justify-content-end">
       <p class="col-12 md:w-8 text-xl md:text-base">
-        Explore diverse range of styles, themes and technique brought to life by
-        talented artist from around the worlds
+        Scopri l’eccellenza di un artigiano che padroneggia le tecniche di
+        doratura, restauro e intaglio. Ogni intervento combina tradizione e
+        precisione per ridare vita a cornici storiche o creare pezzi unici che
+        valorizzano ogni opera.
       </p>
     </div>
   </div>
-  <app-carousel  [sections]="homePageData.tecnicheTab" [white]="true" />
+  <app-carousel [sections]="homePageData.tecnicheTab" [white]="true" />
 
   <div class="w-full flex justify-content-center align-items-center">
-   <app-outlined-button link="tecniche" text="Scopri di più" icon="pi pi-arrow-right" [white]="false"/>
+    <app-outlined-button
+      link="tecniche"
+      text="Scopri di più"
+      icon="pi pi-arrow-right"
+      [white]="false"
+    />
   </div>
-
 </div>
 
 <!--Contattaci-->
 <app-contatti id="contatti"></app-contatti>
-

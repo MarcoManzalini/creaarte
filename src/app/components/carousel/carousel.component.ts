@@ -3,6 +3,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { HomeTabItem } from '../../models/carouselItem.model';
 import { CarouselModule } from 'primeng/carousel';
 import { TabItemComponent } from '../tab-item/tab-item.component';
+import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 
 @Component({
   selector: 'app-carousel',
@@ -18,6 +19,15 @@ import { TabItemComponent } from '../tab-item/tab-item.component';
 export class CarouselComponent {
   @Input() sections: HomeTabItem[] = [];
   @Input() white: boolean = false;
+
+  isPhone:boolean = false;
+
+  constructor(private breakpoint: BreakpointObserver){
+
+    this.breakpoint
+    .observe(Breakpoints.Handset)
+    .subscribe((res) => (this.isPhone = !res.matches));
+  }
 
   responsiveOptions = [
     {

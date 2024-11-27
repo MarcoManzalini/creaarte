@@ -73,16 +73,17 @@ const tecniche: Tecnica[] = [
     id: 5,
     nome: 'Intaglio',
     descrizione: `<div>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        <strong>L'intaglio</strong>, un'arte che vive nel tempo.
+    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
+        <strong>Grazie alla collaborazione con artigiani maestri dell’intaglio</strong>, tecnica attraverso la quale si scalfisce il legno utilizzando scalpelli e sgorbie.
     </p>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        Ogni pezzo che creo è un omaggio alla tradizione dell'intaglio, un'arte che tramanda nel legno l'anima dell'artigiano.
+    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
+        Crearte realizza cornici interamente scolpite a mano, siano esse riproduzioni perfettamente fedeli all’originale, nel rispetto dell’epoca storica dell’opera da incorniciare.
     </p>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        Con pazienza e maestria, trasformo semplici blocchi di legno in opere uniche, dove ogni venatura racconta una storia.
+    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
+        Oppure, nuovi modelli dalle linee e forme contemporanee, progettati su misura e su richiesta del Cliente.
     </p>
 </div>
+
 
 `,
     macrotipoId: 2,
