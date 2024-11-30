@@ -6,100 +6,25 @@ export const homePage = {
   ],
 
   tecnicheTab: [
-   /*  {
-      name: 'T',
-      items: [
-        {
-          url: 'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
-          name: 'Doratura Base',
-          subText: 'Tecnica di doratura su superfici lisce e sagomate.',
-        },
-        {
-          url: 'https://cdn.prod.website-files.com/63eb94f6c942bd7a715f2f57/641abcaba689308c4776a412_Doratura%20caratteristiche%20e%20tecniche%20nel%20restauro%20e%20nella%20decorazione.jpg',
-          name: 'Doratura Avanzata',
-          subText: 'Tecnica avanzata per decorazioni elaborate e dettagliate.',
-        },
-        {
-          url: 'https://www.dorarte.com/images/doratura/doratura-a-missione.jpg',
-          name: 'Finitura in Oro',
-          subText: 'Tecniche di finitura per dorature resistenti e durature.',
-        },
-        {
-          url: 'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg',
-          name: 'Finitura in Oro',
-          subText: 'Tecniche di finitura per dorature resistenti e durature.',
-        },
-      ],
-    },
-    {
-      name: 'Intaglio',
-      items: [
-        {
-          url: 'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
-          name: 'Intaglio su Legno',
-          subText: 'Tecniche di intaglio su legno per sculture e decorazioni.',
-        },
-        {
-          url: 'https://www.megahub.it/wordpress/wp-content/uploads/2017/06/incisione.png',
-          name: 'Intaglio su Pietra',
-          subText: 'Lavorazione di pietra e marmo con tecniche d’intaglio.',
-        },
-        {
-          url: 'https://www.tavolobello.com/public/Files/rif000002/627/legno-intagliato.jpg',
-          name: 'Intaglio Decorativo',
-          subText:
-            'Intaglio decorativo per opere ornamentali su diversi materiali.',
-        },
-        {
-          url: 'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg',
-          name: 'Intaglio Decorativo',
-          subText:
-            'Intaglio decorativo per opere ornamentali su diversi materiali.',
-        },
-      ],
-    },
-    {
-      name: 'Restauro',
-      items: [
-        {
-          url: 'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
-          name: 'Restauro Dipinti',
-          subText: 'Tecniche di restauro per il recupero di dipinti antichi.',
-        },
-        {
-          url: 'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
-          name: 'Restauro Sculture',
-          subText: 'Procedure di restauro per sculture e bassorilievi.',
-        },
-        {
-          url: 'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-          name: 'Restauro Mobili Antichi',
-          subText: 'Recupero e conservazione di mobili e manufatti d’epoca.',
-        },
-        {
-          url: 'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
-          name: 'Restauro Mobili Antichi',
-          subText: 'Recupero e conservazione di mobili e manufatti d’epoca.',
-        },
-      ],
-    }, */
     {
       name: 'Cosa offriamo?',
       items: [
         {
           url: 'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
           name: 'Doratura',
-          subText: 'Tecnica di doratura su superfici lisce e sagomate.',
+          subText: `Crearte ha acquisito una profonda conoscenza sia nella tecnica "a missione”, sia nella tecnica “a guazzo” , con l'utilizzo della foglia d'oro zecchino o argento.`,
         },
         {
           url: 'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
           name: 'Intaglio',
-          subText: 'Tecniche di intaglio su legno per sculture e decorazioni.',
+          subText:
+            'Crearte realizza cornici interamente scolpite a mano, siano esse antiche, moderne, riproduzione o nuovi progetti su richiesta.',
         },
         {
-          url: 'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
+          url: 'https://www.mobilisisi.com/wp-content/uploads/2018/06/falegameria-restauro-intarsi_1080.jpg',
           name: 'Restauro',
-          subText: 'Recupero e conservazione di mobili e manufatti d’epoca.',
+          subText: `Crearte in grado di ridare vita a oggetti storici, preservandone l'autenticità e la bellezza.
+`,
         },
       ],
     },
@@ -133,7 +58,8 @@ export const homePage = {
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
           name: 'Cornice Barocca',
-          subText: 'Cornice riccamente decorata nello stile del periodo barocco.',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
@@ -154,7 +80,8 @@ export const homePage = {
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
           name: 'Cornice Barocca',
-          subText: 'Cornice riccamente decorata nello stile del periodo barocco.',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
@@ -175,7 +102,8 @@ export const homePage = {
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
           name: 'Cornice Barocca',
-          subText: 'Cornice riccamente decorata nello stile del periodo barocco.',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
@@ -196,7 +124,8 @@ export const homePage = {
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
           name: 'Cornice Barocca',
-          subText: 'Cornice riccamente decorata nello stile del periodo barocco.',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
@@ -217,7 +146,8 @@ export const homePage = {
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
           name: 'Cornice Barocca',
-          subText: 'Cornice riccamente decorata nello stile del periodo barocco.',
+          subText:
+            'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
           url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
@@ -233,5 +163,4 @@ export const homePage = {
       ],
     },
   ],
-  
 };

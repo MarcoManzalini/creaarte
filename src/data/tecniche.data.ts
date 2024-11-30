@@ -53,7 +53,7 @@ const tecniche: Tecnica[] = [
         <strong>La doratura</strong> è un processo di decorazione ornamentale usato su diversi materiali e con diverse tecniche per impreziosire un oggetto tramite l'apposizione di un sottilissimo strato di oro.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6;">
-        Nel corso degli anni <strong>Crearte</strong> ha evoluto una profonda conoscenza sia nella tecnica più comune chiamata "<em>a missione</em>", sia nella tecnica "<em>a guazzo</em>" più antica e affascinante, con l'utilizzo della foglia d'oro zecchino o argento.
+        Nel corso degli anni <strong><i>Crearte</i></strong> ha evoluto una profonda conoscenza sia nella tecnica più comune chiamata "<em>a missione</em>", sia nella tecnica "<em>a guazzo</em>" più antica e affascinante, con l'utilizzo della foglia d'oro zecchino o argento.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6;">
         Ogni pezzo è un viaggio nel tempo, un omaggio alla maestria degli antichi artigiani.
@@ -74,13 +74,7 @@ const tecniche: Tecnica[] = [
     nome: 'Intaglio',
     descrizione: `<div>
     <p style="font-family: Arial, sans-serif; line-height: 1.6;">
-        <strong>Grazie alla collaborazione con artigiani maestri dell’intaglio</strong>, tecnica attraverso la quale si scalfisce il legno utilizzando scalpelli e sgorbie.
-    </p>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
-        Crearte realizza cornici interamente scolpite a mano, siano esse riproduzioni perfettamente fedeli all’originale, nel rispetto dell’epoca storica dell’opera da incorniciare.
-    </p>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
-        Oppure, nuovi modelli dalle linee e forme contemporanee, progettati su misura e su richiesta del Cliente.
+      Grazie alla collaborazione con <strong> artigiani maestri dell’intaglio</strong>, tecnica attraverso la quale si scalfisce il legno attraverso l’utilizzo di scalpelli e sgorbie, <i>Crearte</i> realizza cornici interamente scolpite a mano, siano esse riproduzioni perfettamente fedeli all’originale, nel rispetto dell’epoca storica dell’opera da incorniciare, o nuovi modelli dalle linee e forme contemporanee su progetto e richiesta del Cliente.
     </p>
 </div>
 
@@ -107,10 +101,10 @@ const tecniche: Tecnica[] = [
         Ogni intervento è studiato ad hoc, tenendo conto delle caratteristiche uniche dell’opera e delle richieste del Cliente.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        Con passione e maestria, <strong>Crearte</strong> si dedica al restauro stilistico e conservativo di opere d'arte e beni culturali.
+        Con passione e maestria, <strong><i>Crearte</i></strong> si dedica al restauro stilistico e conservativo di opere d'arte e beni culturali.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        Grazie a un'esperienza pluriennale e alla conoscenza profonda delle tecniche tradizionali, <strong>Crearte</strong> è in grado di ridare vita a oggetti che hanno segnato la storia, preservandone l'autenticità e la bellezza.
+        Grazie a un'esperienza pluriennale e alla conoscenza profonda delle tecniche tradizionali, <strong><i>Crearte</i></strong> è in grado di ridare vita a oggetti che hanno segnato la storia, preservandone l'autenticità e la bellezza.
     </p>
 </div>
 `,
@@ -132,13 +126,13 @@ const tecniche: Tecnica[] = [
         <strong>Ogni opera d'arte</strong> merita una cornice che ne esalti la bellezza e le caratteristiche stilistiche e storiche in modo armonico ed equilibrato.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        <strong>Crearte</strong> è un laboratorio artistico con una lunga tradizione nella riproduzione e nella creazione di cornici su misura. Ogni cornice è un pezzo unico, lavorato a mano con passione e maestria, per garantire un risultato che rispetti la storia e l'originalità dell'opera.
+        <strong><i>Crearte</i></strong> è un laboratorio artistico con una lunga tradizione nella riproduzione e nella creazione di cornici su misura. Ogni cornice è un pezzo unico, lavorato a mano con passione e maestria, per garantire un risultato che rispetti la storia e l'originalità dell'opera.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
         La nostra profonda conoscenza dei diversi stili e delle tecniche di lavorazione ci permette di creare cornici che rispettano i canoni estetici e storici dell'epoca.
     </p>
     <p style="font-family: Arial, sans-serif; line-height: 1.6; ">
-        Antiche, moderne, barocche o futuristiche: <strong>Crearte</strong> vi offre un ampio catalogo di modelli tra cui scegliere, guidandovi nella scelta della cornice più adatta a completare la vostra opera, valorizzandola ed esaltandone l’anima.
+        Antiche, moderne, barocche o futuristiche: <strong><i>Crearte</i></strong> vi offre un ampio catalogo di modelli tra cui scegliere, guidandovi nella scelta della cornice più adatta a completare la vostra opera, valorizzandola ed esaltandone l’anima.
     </p>
 </div>
 `,
