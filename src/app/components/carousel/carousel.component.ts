@@ -26,7 +26,7 @@ export class CarouselComponent {
 
     this.breakpoint
     .observe(Breakpoints.Handset)
-    .subscribe((res) => (this.isPhone = !res.matches));
+    .subscribe((res) => (this.isPhone = res.matches));
   }
 
   responsiveOptions = [
