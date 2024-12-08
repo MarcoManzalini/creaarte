@@ -35,20 +35,15 @@ export const homePage = {
       name: 'Moderne',
       items: [
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/07/cornici-in-argento.jpg',
+          url: 'assets/cornici/cornici_14.jpg',
           name: 'Cornice Minimalista',
-          subText: 'Design essenziale, ideale per ambienti contemporanei.',
+          subText: 'Cornice contemporenea 1',
         },
         {
-          url: 'https://img.freepik.com/premium-photo/vintage-photo-frame-black-background_156881-12065.jpg',
+          url: 'assets/cornici/cornici_7.jpg',
           name: 'Cornice Industriale',
           subText:
-            'Cornice in metallo spazzolato, dallo stile urbano e moderno.',
-        },
-        {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/07/cornici-in-argento.jpg',
-          name: 'Cornice Scandinava',
-          subText: 'Stile nordico con materiali naturali e colori chiari.',
+            'Cornice contemporanea 2',
         },
       ],
     },
@@ -56,19 +51,19 @@ export const homePage = {
       name: '900',
       items: [
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          url: 'assets/cornici/cornici_8.jpg',
           name: 'Cornice Barocca',
           subText:
             'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          url: 'assets/cornici/cornici_6.jpg',
           name: 'Cornice Rinascimentale',
           subText:
             'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          url: 'assets/cornici/cornici_11.jpg',
           name: 'Cornice Neoclassica',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
         },
@@ -78,19 +73,19 @@ export const homePage = {
       name: '800',
       items: [
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          url: 'assets/cornici/cornici_1.jpg',
           name: 'Cornice Barocca',
           subText:
             'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          url: 'assets/cornici/cornici_4.jpg',
           name: 'Cornice Rinascimentale',
           subText:
             'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          url: 'assets/cornici/cornici_11.jpg',
           name: 'Cornice Neoclassica',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
         },
@@ -100,19 +95,19 @@ export const homePage = {
       name: '700',
       items: [
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          url: 'assets/cornici/cornici_6.jpg',
           name: 'Cornice Barocca',
           subText:
             'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          url: 'assets/cornici/cornici_12.jpg',
           name: 'Cornice Rinascimentale',
           subText:
             'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          url: 'assets/cornici/cornici_6.jpg',
           name: 'Cornice Neoclassica',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
         },
@@ -122,19 +117,19 @@ export const homePage = {
       name: '600',
       items: [
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          url: 'assets/cornici/cornici_3.jpg',
           name: 'Cornice Barocca',
           subText:
             'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          url: 'assets/cornici/cornici_8.jpg',
           name: 'Cornice Rinascimentale',
           subText:
             'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          url: 'assets/cornici/cornici_15.jpg',
           name: 'Cornice Neoclassica',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
         },
@@ -144,19 +139,19 @@ export const homePage = {
       name: '500',
       items: [
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2021/02/antique-frames.jpg',
+          url: 'assets/cornici/cornici_2.jpg',
           name: 'Cornice Barocca',
           subText:
             'Cornice riccamente decorata nello stile del periodo barocco.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/012-262x262.jpg',
+          url: 'assets/cornici/cornici_5.jpg',
           name: 'Cornice Rinascimentale',
           subText:
             'Elegante cornice rinascimentale, con motivi classici e simmetrici.',
         },
         {
-          url: 'https://corniciantiche.it/wp-content/uploads/2019/10/013-262x262.jpg',
+          url: 'assets/cornici/cornici_9.jpg',
           name: 'Cornice Neoclassica',
           subText: 'Stile sobrio e lineare tipico dell’epoca neoclassica.',
         },
