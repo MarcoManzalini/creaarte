@@ -48,13 +48,35 @@
               <i [class]="event.icon"></i>
             </span>
           </a>
-          }@else{
+          }@else{ @switch (event.status) { @case ('Crearte Facebook') {
+          <a
+            href="https://www.facebook.com/100057733296819/about/?_rdr"
+            target="_blank"
+            class="no-underline text-black-alpha-90"
+          >
+            <span
+              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+            >
+              <i [class]="event.icon"></i> </span
+          ></a>
+          } @case ('Crearte Instagram') {
+          <a
+            href="https://www.instagram.com/alan.mosconi/?hl=it"
+            target="_blank"
+            class="no-underline text-black-alpha-90"
+          >
+            <span
+              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+            >
+              <i [class]="event.icon"></i> </span
+          ></a>
+          } @default {
           <span
             class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
           >
             <i [class]="event.icon"></i>
           </span>
-          }
+          } } }
         </ng-template>
 
         <ng-template pTemplate="content" class="p-1" let-event>
