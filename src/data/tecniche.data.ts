@@ -62,10 +62,21 @@ const tecniche: Tecnica[] = [
 `,
     macrotipoId: 1,
     immagini: [
-      'https://www.zonazago7.it/wp-content/uploads/2016/02/Corso_Doratura_Bologna_8236.jpg',
-      'https://cdn.prod.website-files.com/63eb94f6c942bd7a715f2f57/641abcaba689308c4776a412_Doratura%20caratteristiche%20e%20tecniche%20nel%20restauro%20e%20nella%20decorazione.jpg',
-      'https://www.dorarte.com/images/doratura/doratura-a-missione.jpg',
-      'https://bazardelpittore.wordpress.com/wp-content/uploads/2014/07/2_doratura-missione.jpg',
+      '/assets/tecniche/doratura/doratura_1.jpg',
+      '/assets/tecniche/doratura/doratura_2.jpg',
+      '/assets/tecniche/doratura/doratura_3.jpg',
+      '/assets/tecniche/doratura/doratura_4.jpg',
+      '/assets/tecniche/doratura/doratura_5.jpg',
+      '/assets/tecniche/doratura/doratura_6.jpg',
+      '/assets/tecniche/doratura/doratura_7.jpg',
+      '/assets/tecniche/doratura/doratura_8.jpg',
+      '/assets/tecniche/doratura/doratura_9.jpg',
+      '/assets/tecniche/doratura/doratura_10.jpg',
+      '/assets/tecniche/doratura/doratura_11.jpg',
+      '/assets/tecniche/doratura/doratura_12.jpg',
+      '/assets/tecniche/doratura/doratura_13.jpg',
+      '/assets/tecniche/doratura/doratura_14.jpg',
+      '/assets/tecniche/doratura/doratura_15.jpg',
     ],
   },
   // Tecniche di Intaglio
@@ -77,15 +88,13 @@ const tecniche: Tecnica[] = [
       Grazie alla collaborazione con <strong> artigiani maestri dell’intaglio</strong>, tecnica attraverso la quale si scalfisce il legno attraverso l’utilizzo di scalpelli e sgorbie, <i>Crearte</i> realizza cornici interamente scolpite a mano, siano esse riproduzioni perfettamente fedeli all’originale, nel rispetto dell’epoca storica dell’opera da incorniciare, o nuovi modelli dalle linee e forme contemporanee su progetto e richiesta del Cliente.
     </p>
 </div>
-
-
 `,
     macrotipoId: 2,
     immagini: [
-      'https://static.cuneodice.it/cuneo/foto/3104/2599.jpg',
-      'https://www.megahub.it/wordpress/wp-content/uploads/2017/06/incisione.png',
-      'https://www.tavolobello.com/public/Files/rif000002/627/legno-intagliato.jpg',
-      'https://www.lignoma.com/images/content/magazin/schnitzen-lernen-2.jpg',
+      '/assets/tecniche/intaglio/intaglio_1.jpg',
+      '/assets/tecniche/intaglio/intaglio_2.jpg',
+      '/assets/tecniche/intaglio/intaglio_3.jpg',
+      '/assets/tecniche/intaglio/intaglio_4.jpg',
     ],
   },
 
@@ -110,10 +119,12 @@ const tecniche: Tecnica[] = [
 `,
     macrotipoId: 3,
     immagini: [
-      'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
-      'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
-      'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
+      '/assets/tecniche/restauro/restauro_1.jpg',
+      '/assets/tecniche/restauro/restauro_2.jpg',
+      '/assets/tecniche/restauro/restauro_3.jpg',
+      '/assets/tecniche/restauro/restauro_4.jpg',
+      '/assets/tecniche/restauro/restauro_5.jpg',
+      '/assets/tecniche/restauro/restauro_6.jpg',
     ],
   },
 
@@ -138,10 +149,21 @@ const tecniche: Tecnica[] = [
 `,
     macrotipoId: 4,
     immagini: [
-      'https://media.adeo.com/media/2935850/media.jpeg?precrop=3666,3666,x995,y0&width=640&quality=75&width=640',
-      'https://www.sborgia.com/wp-content/uploads/2022/09/guida-ferramenta-consigli-per-il-restauro-di-mobili.jpg',
-      'https://www.fioreantichita.com/wp-content/uploads/2014/03/restauro-mobile.jpg',
-      'https://danielecorsi.com/wp-content/uploads/2020/05/restauro-intarsio-milano.jpg',
+     '/assets/cornici/cornici_1.jpg',
+     '/assets/cornici/cornici_2.jpg',
+     '/assets/cornici/cornici_3.jpg',
+     '/assets/cornici/cornici_4.jpg',
+     '/assets/cornici/cornici_5.jpg',
+     '/assets/cornici/cornici_6.jpg',
+     '/assets/cornici/cornici_7.jpg',
+     '/assets/cornici/cornici_8.jpg',
+     '/assets/cornici/cornici_9.jpg',
+     '/assets/cornici/cornici_10.jpg',
+     '/assets/cornici/cornici_11.jpg',
+     '/assets/cornici/cornici_12.jpg',
+     '/assets/cornici/cornici_13.jpg',
+     '/assets/cornici/cornici_14.jpg',
+     '/assets/cornici/cornici_15.jpg',
     ],
   },
 ];

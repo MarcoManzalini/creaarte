@@ -72,9 +72,25 @@
           >
             {{ event.status }}
           </a>
-          }@else{
+          }@else{ @switch (event.status) { @case ('Crearte Facebook') {
+          <a
+            href="https://www.facebook.com/100057733296819/about/?_rdr"
+            target="_blank"
+            class="no-underline text-black-alpha-90"
+          >
+            {{ event.status }}
+          </a>
+          } @case ('Crearte Instagram') {
+          <a
+            href="https://www.instagram.com/alan.mosconi/?hl=it"
+            target="_blank"
+            class="no-underline text-black-alpha-90"
+          >
+            {{ event.status }}
+          </a>
+          } @default {
           {{ event.status }}
-          }
+          } } }
         </ng-template>
       </p-timeline>
     </div>
