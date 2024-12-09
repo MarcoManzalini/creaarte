@@ -41,14 +41,14 @@ const epoche: Epoca[] = [
 const cornici: Cornice[] = [
   {
     id: 1,
-    nome: 'Cornice ottocentesca',
+    nome: 'Cornice',
     epocaId: 4,
     immagine: 'assets/cornici/cornici_1.jpg',
     descrizione: 'Cornice  decorata',
   },
   {
     id: 2,
-    nome: 'Cornice  1',
+    nome: 'Cornice 1',
     epocaId: 1,
     immagine: 'assets/cornici/cornici_2.jpg',
     descrizione: 'Cornice decorata',

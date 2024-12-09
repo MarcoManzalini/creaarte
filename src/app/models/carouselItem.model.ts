@@ -5,6 +5,7 @@ export interface HomeTabItem {
 
 export interface tabItem {
   url: string;
+  phoneUrl?:string;
   name: string;
   buttonText?: string;
   subText: string;

@@ -16,6 +16,9 @@
 }
 
 :host ::ng-deep .white .p-galleria-indicators {
+  
+  overflow: hidden;
+
   button {
     background-color: black;
     border-radius: 1rem;
