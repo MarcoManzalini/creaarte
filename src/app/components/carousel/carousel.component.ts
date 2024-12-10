@@ -19,6 +19,7 @@ import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 export class CarouselComponent {
   @Input() sections: HomeTabItem[] = [];
   @Input() white: boolean = false;
+  @Input() tabs: boolean = true;
 
   isPhone:boolean = false;
 

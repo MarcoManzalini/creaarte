@@ -5,3 +5,13 @@
   background-repeat: no-repeat;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .image-container {
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}

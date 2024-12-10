@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { OutlinedButtonComponent } from '../../../components/outlined-button/outlined-button.component';
 import { ButtonModule } from 'primeng/button';
@@ -17,28 +17,34 @@ import { homePage } from '../../../../data/home-page.data';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
-export class HeroComponent {
+export class HeroComponent implements OnInit{
   @Input() images: string[] = [];
 
   activeIndex = 0;
   whiteText = false;
+  isPhone:boolean = false;
 
-  next() {
-    this.activeIndex =
-      this.activeIndex + 1 >= this.images.length ? 0 : this.activeIndex + 1;
-    
-      this.changeTextColor(this.activeIndex);
+  ngOnInit(): void {
+    const ua = navigator.userAgent;
+    this.isPhone =  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)
+
+    this.changeTextColor(0);
   }
 
-  prev() {
-    this.activeIndex =
+  changeImage(type:'add' | 'sub'){
+    this.activeIndex = type === 'add' ?
+      this.activeIndex + 1 >= this.images.length ? 0 : this.activeIndex +  1  :
       this.activeIndex - 1 < 0 ? this.images.length - 1 : this.activeIndex - 1;
+    
+      console.log(this.activeIndex);
+
 
       this.changeTextColor(this.activeIndex);
   }
+
 
   changeTextColor(event){
-    this.whiteText = homePage.heroImages[event].includes('w');
+    this.whiteText = this.isPhone ? homePage.mobileHeroImages[event].includes('w') : homePage.heroImages[event].includes('w');
   }
   
 }

@@ -5,6 +5,11 @@ export const homePage = {
    'assets/home/hero_3w.jpg',
   ],
 
+  mobileHeroImages: [
+    'assets/home/hero_mobile_1w.jpg',
+    'assets/home/hero_mobile_2w.jpg',
+  ],
+
   tecnicheTab: [
     {
       name: 'Cosa offriamo?',
@@ -40,68 +45,68 @@ export const homePage = {
         {
           url: 'assets/cornici/cornici_14.jpg',
           name: 'Cornice',
-          subText: 'descrizione da inserire',
+          subText: '',
         },
         {
           url: 'assets/cornici/cornici_7.jpg',
           name: 'Cornice',
           subText:
-            'descrizione da inserire',
+            '',
         },
         {
           url: 'assets/cornici/cornici_8.jpg',
           name: 'Cornice',
-          subText: 'descrizione da inserire',
+          subText: '',
         },
         {
           url: 'assets/cornici/cornici_6.jpg',
           name: 'Cornice',
           subText:
-            'descrizione da inserire',
+            '',
         },
         {
           url: 'assets/cornici/cornici_11.jpg',
           name: 'Cornice',
-          subText: 'descrizione da inserire',
+          subText: '',
         },
         {
           url: 'assets/cornici/cornici_1.jpg',
           name: 'Cornice',
           subText:
-            'descrizione da inserire',
+            '',
         },
         {
           url: 'assets/cornici/cornici_4.jpg',
           name: 'Cornice',
-          subText: 'descrizione da inserire',
+          subText: '',
         },
         {
           url: 'assets/cornici/cornici_6.jpg',
           name: 'Cornice',
           subText:
-            'descrizione da inserire',
+            '',
         },
         {
           url: 'assets/cornici/cornici_12.jpg',
           name: 'Cornice',
-          subText: 'descrizione da inserire',
+          subText: '',
         },
         {
           url: 'assets/cornici/cornici_2.jpg',
           name: 'Cornice',
           subText:
-            'descrizione da inserire',
+            '',
         },
         {
           url: 'assets/cornici/cornici_5.jpg',
           name: 'Cornice',
-          subText: 'descrizione da inserire',
+          subText: '',
         },
         {
           url: 'assets/cornici/cornici_9.jpg',
           name: 'Cornice',
           subText:
-            'descrizione da inserire',
+            '',
         },
       ],
     },
