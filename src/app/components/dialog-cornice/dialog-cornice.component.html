@@ -1,6 +1,6 @@
 @if(openCornice){
     <p-dialog
-      header="Dettagli Cornice"
+      [header]="openCornice.name"
       [modal]="true"
       [(visible)]="openDialog"
       [style]="{ width: '40rem', 'max-width': '100dvw' }"
@@ -14,7 +14,6 @@
       </div>
     
       <div>
-        <h3>{{ openCornice.name }}</h3>
         <p>
           {{ openCornice.subText }}
         </p>

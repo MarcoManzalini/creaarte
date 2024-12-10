@@ -1,14 +1,21 @@
 <p-tabView class="white">
-  <p-tabPanel header="Tutte"> 
+  <p-tabPanel header="Tutte">
     <div class="grid bg-black-alpha-90 border-round">
-    @for(cornice of cornici; track $index){
+      @for(cornice of cornici; track $index){
       <div class="col-12 md:col-4 lg:col-3">
-        <app-tab-item [tabData]="{'url': cornice.immagine, 'name':cornice.nome, 'subText': cornice.descrizione}" [tipo]="cornice.epoca.nome"/>
+        <app-tab-item
+          [tabData]="{
+            url: cornice.immagine,
+            name: cornice.nome,
+            subText: cornice.descrizione
+          }"
+          [tipo]="cornice.epoca.nome"
+        />
       </div>
-    }
+      }
     </div>
   </p-tabPanel>
- <!--  @for (group of groupedCornici; track $index) {
+  <!--  @for (group of groupedCornici; track $index) {
   <p-tabPanel [header]="group.epoca.nome">
     <div class="grid bg-black-alpha-90 border-round">
       @for (cornice of group.cornici; track $index) {
@@ -20,4 +27,3 @@
   </p-tabPanel>
   } -->
 </p-tabView>
-

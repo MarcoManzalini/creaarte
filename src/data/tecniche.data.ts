@@ -42,6 +42,9 @@ const macrotipiTecnica: MacrotipoTecnica[] = [
   { id: 4, nome: 'Cornici' },
 ];
 
+const getImages = (type, maxSize,url:string = 'assets/tecniche') =>
+  Array.from({ length: maxSize }, (_, index) => `${url}/${type}/${type}_${index + 1}.jpg`);
+
 // Lista di tecniche di esempio
 const tecniche: Tecnica[] = [
   // Tecniche di Doratura
@@ -61,23 +64,7 @@ const tecniche: Tecnica[] = [
 </div>
 `,
     macrotipoId: 1,
-    immagini: [
-      '/assets/tecniche/doratura/doratura_1.jpg',
-      '/assets/tecniche/doratura/doratura_2.jpg',
-      '/assets/tecniche/doratura/doratura_3.jpg',
-      '/assets/tecniche/doratura/doratura_4.jpg',
-      '/assets/tecniche/doratura/doratura_5.jpg',
-      '/assets/tecniche/doratura/doratura_6.jpg',
-      '/assets/tecniche/doratura/doratura_7.jpg',
-      '/assets/tecniche/doratura/doratura_8.jpg',
-      '/assets/tecniche/doratura/doratura_9.jpg',
-      '/assets/tecniche/doratura/doratura_10.jpg',
-      '/assets/tecniche/doratura/doratura_11.jpg',
-      '/assets/tecniche/doratura/doratura_12.jpg',
-      '/assets/tecniche/doratura/doratura_13.jpg',
-      '/assets/tecniche/doratura/doratura_14.jpg',
-      '/assets/tecniche/doratura/doratura_15.jpg',
-    ],
+    immagini: getImages('doratura',15),
   },
   // Tecniche di Intaglio
   {
@@ -90,12 +77,7 @@ const tecniche: Tecnica[] = [
 </div>
 `,
     macrotipoId: 2,
-    immagini: [
-      '/assets/tecniche/intaglio/intaglio_1.jpg',
-      '/assets/tecniche/intaglio/intaglio_2.jpg',
-      '/assets/tecniche/intaglio/intaglio_3.jpg',
-      '/assets/tecniche/intaglio/intaglio_4.jpg',
-    ],
+    immagini:getImages('intaglio',4),
   },
 
   // Tecniche di Restauro
@@ -118,14 +100,7 @@ const tecniche: Tecnica[] = [
 </div>
 `,
     macrotipoId: 3,
-    immagini: [
-      '/assets/tecniche/restauro/restauro_1.jpg',
-      '/assets/tecniche/restauro/restauro_2.jpg',
-      '/assets/tecniche/restauro/restauro_3.jpg',
-      '/assets/tecniche/restauro/restauro_4.jpg',
-      '/assets/tecniche/restauro/restauro_5.jpg',
-      '/assets/tecniche/restauro/restauro_6.jpg',
-    ],
+    immagini: getImages('restauro',3),
   },
 
   // Cornici
@@ -148,23 +123,7 @@ const tecniche: Tecnica[] = [
 </div>
 `,
     macrotipoId: 4,
-    immagini: [
-     '/assets/cornici/cornici_1.jpg',
-     '/assets/cornici/cornici_2.jpg',
-     '/assets/cornici/cornici_3.jpg',
-     '/assets/cornici/cornici_4.jpg',
-     '/assets/cornici/cornici_5.jpg',
-     '/assets/cornici/cornici_6.jpg',
-     '/assets/cornici/cornici_7.jpg',
-     '/assets/cornici/cornici_8.jpg',
-     '/assets/cornici/cornici_9.jpg',
-     '/assets/cornici/cornici_10.jpg',
-     '/assets/cornici/cornici_11.jpg',
-     '/assets/cornici/cornici_12.jpg',
-     '/assets/cornici/cornici_13.jpg',
-     '/assets/cornici/cornici_14.jpg',
-     '/assets/cornici/cornici_15.jpg',
-    ],
+    immagini: getImages('cornici',15,'assets'),
   },
 ];
 
