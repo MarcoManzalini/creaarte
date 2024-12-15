@@ -44,67 +44,61 @@ export const homePage = {
       items: [
         {
           url: 'assets/cornici/cornici_14.jpg',
-          name: 'Cornice',
+          name: 'Aletta oro consumata',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_7.jpg',
-          name: 'Cornice',
+          name: 'Decò palme',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_8.jpg',
-          name: 'Cornice',
+          name: 'Salvator rosa doppia',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_6.jpg',
-          name: 'Cornice',
+          name: 'Bombato ossidata 8cm',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_11.jpg',
-          name: 'Cornice',
+          name: 'Baldini centro polimerica',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_1.jpg',
-          name: 'Cornice',
+          name: 'Cornetta "Eleonora" 500',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_4.jpg',
-          name: 'Cornice',
+          name: 'Veneziana storta',
           subText: '',
         },
         {
-          url: 'assets/cornici/cornici_6.jpg',
-          name: 'Cornice',
-          subText:
-            '',
-        },
-        {
           url: 'assets/cornici/cornici_12.jpg',
-          name: 'Cornice',
+          name: 'Cornetta a scacchi 600 Lombarda',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_2.jpg',
-          name: 'Cornice',
+          name: '600 radica madre',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_5.jpg',
-          name: 'Cornice',
+          name: 'Baldini oro',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_9.jpg',
-          name: 'Cornice',
+          name: 'Cornetta fiorentina',
           subText:
             '',
         },
