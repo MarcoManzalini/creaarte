@@ -44,50 +44,50 @@ export const homePage = {
       items: [
         {
           url: 'assets/cornici/cornici_14.jpg',
-          name: 'Aletta oro consumata',
+          name: 'Cornice',//'Aletta oro consumata',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_7.jpg',
-          name: 'Decò palme',
+          name: 'Cornice',//'Decò palme',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_8.jpg',
-          name: 'Salvator rosa doppia',
+          name: 'Cornice',//'Salvator rosa doppia',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_6.jpg',
-          name: 'Bombato ossidata 8cm',
+          name: 'Cornice',//'Bombato ossidata 8cm',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_11.jpg',
-          name: 'Baldini centro polimerica',
+          name: 'Cornice',//'Baldini centro polimerica',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_1.jpg',
-          name: 'Cornetta "Eleonora" 500',
+          name: 'Cornice',//'Cornetta "Eleonora" 500',
           subText:
             '',
         },
         {
           url: 'assets/cornici/cornici_4.jpg',
-          name: 'Veneziana storta',
+          name: 'Cornice',//'Veneziana storta',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_12.jpg',
-          name: 'Cornetta a scacchi 600 Lombarda',
+          name: 'Cornice',//'Cornetta a scacchi 600 Lombarda',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_2.jpg',
-          name: '600 radica madre',
+          name: 'Cornice',//'600 radica madre',
           subText:
             '',
         },

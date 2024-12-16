@@ -17,9 +17,17 @@ import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
   styleUrl: './carousel.component.scss',
 })
 export class CarouselComponent {
+  /**Dati in input */
   @Input() sections: HomeTabItem[] = [];
+
+  /**Se devono essre bianche o nere le scritte */
   @Input() white: boolean = false;
+
+  /**Se ho delle tabs tra cui navigare o no */
   @Input() tabs: boolean = true;
+
+  /**Se voglio vedere o no i navigatori */
+  @Input() navigators:boolean = false;
 
   isPhone:boolean = false;
 
@@ -33,7 +41,7 @@ export class CarouselComponent {
   responsiveOptions = [
     {
       breakpoint: '1199px',
-      numVisible: 1,
+      numVisible: 3,
       numScroll: 1,
     },
     {
