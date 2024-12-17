@@ -93,12 +93,12 @@ export const homePage = {
         },
         {
           url: 'assets/cornici/cornici_5.jpg',
-          name: 'Baldini oro',
+          name: 'Cornice',
           subText: '',
         },
         {
           url: 'assets/cornici/cornici_9.jpg',
-          name: 'Cornetta fiorentina',
+          name: 'Cornice',
           subText:
             '',
         },

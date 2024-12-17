@@ -16,7 +16,7 @@
       </p>
     </div>
   </div>
-  <app-carousel [sections]="homePageData.corniciTab" [white]="false" [tabs]="false" [navigators]="true"/>
+  <app-carousel [sections]="homePageData.corniciTab" [white]="false" [tabs]="false" [navigators]="!isPhone"/>
 
   <div class="w-full flex justify-content-center align-items-center">
     <app-outlined-button
