@@ -54,11 +54,6 @@ export const homePage = {
             '',
         },
         {
-          url: 'assets/cornici/cornici_8.jpg',
-          name: 'Cornice',//'Salvator rosa doppia',
-          subText: '',
-        },
-        {
           url: 'assets/cornici/cornici_6.jpg',
           name: 'Cornice',//'Bombato ossidata 8cm',
           subText:

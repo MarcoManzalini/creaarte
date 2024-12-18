@@ -89,13 +89,6 @@ const cornici: Cornice[] = [
     descrizione: '',
   },
   {
-    id: 8,
-    nome: 'Salvator rosa doppia',
-    epocaId: 2,
-    immagine: 'assets/cornici/cornici_8.jpg',
-    descrizione: '',
-  },
-  {
     id: 9,
     nome: 'Cornetta fiorentina',
     epocaId: 1,
@@ -236,20 +229,6 @@ const cornici: Cornice[] = [
     descrizione: '',
   },
   {
-    id: 29,
-    nome: '035 media argento incise',
-    epocaId: 2,
-    immagine: 'assets/cornici/cornici_29.jpg',
-    descrizione: '',
-  },
-  {
-    id: 30,
-    nome: '600 argento zigrinata',
-    epocaId: 2,
-    immagine: 'assets/cornici/cornici_30.jpg',
-    descrizione: '',
-  },
-  {
     id: 31,
     nome: 'Impero morandi',
     epocaId: 2,
@@ -275,13 +254,6 @@ const cornici: Cornice[] = [
     nome: 'Spagnola oro nero',
     epocaId: 2,
     immagine: 'assets/cornici/cornici_34.jpg',
-    descrizione: '',
-  },
-  {
-    id: 35,
-    nome: 'Spagnola oro nero',
-    epocaId: 2,
-    immagine: 'assets/cornici/cornici_35.jpg',
     descrizione: '',
   },
   {
