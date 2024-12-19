@@ -31,7 +31,7 @@ export const homePage = {
           url: 'assets/tecniche/restauro/restauro_6.jpg',
           phoneUrl: 'assets/tecniche/restauro/restauro_1.jpg',
           name: 'Restauro',
-          subText: `Crearte in grado di ridare vita a oggetti storici, preservandone l'autenticità e la bellezza.
+          subText: `Crearte è in grado di ridare vita a oggetti storici, preservandone l'autenticità e la bellezza.
 `,
         },
       ],

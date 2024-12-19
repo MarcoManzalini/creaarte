@@ -20,7 +20,7 @@
   </div>
 
   <div>
-    <p class="arboreto text-white text-2xl">{{ tabData.name }}</p>
+    <p class="arboreto  text-2xl" [class]="white ? 'text-white' : ''">{{ tabData.name }}</p>
     <p class="md:h-3rem text-white">{{ tabData.subText }}</p>
   </div>
 </div>
