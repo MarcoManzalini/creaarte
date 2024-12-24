@@ -1,0 +1,6 @@
+@media (max-width: 1400px) and (min-width: 1200px) {
+    .xl\:col-3 {
+      flex: 0 0 calc(33% - 1rem); /* Adatta a 5 colonne */
+      max-width: calc(33% - 1rem);
+    }
+}

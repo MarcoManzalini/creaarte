@@ -40,12 +40,17 @@ export class CarouselComponent {
 
   responsiveOptions = [
     {
-      breakpoint: '1199px',
+      breakpoint: '1430px',
+      numVisible: 4,
+      numScroll: 1,
+    },
+    {
+      breakpoint: '1400px',
       numVisible: 3,
       numScroll: 1,
     },
     {
-      breakpoint: '991px',
+      breakpoint: '1040px',
       numVisible: 2,
       numScroll: 1,
     },
