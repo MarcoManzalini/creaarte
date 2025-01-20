@@ -51,14 +51,14 @@ const tecniche: Tecnica[] = [
   {
     id: 1,
     nome: 'Doratura',
-    descrizione: `<div>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
+    descrizione: `<div class="flex flex-col content-between">
+    <p style="font-family: Arial, sans-serif; line-height: 1.6;" class="mb-4">
         <strong>La doratura</strong> è un processo di decorazione ornamentale usato su diversi materiali e con diverse tecniche per impreziosire un oggetto tramite l'apposizione di un sottilissimo strato di oro.
     </p>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
+    <p style="font-family: Arial, sans-serif; line-height: 1.6;" class="mb-4">
         Nel corso degli anni <strong><i>Crearte</i></strong> ha evoluto una profonda conoscenza sia nella tecnica più comune chiamata "<em>a missione</em>", sia nella tecnica "<em>a guazzo</em>" più antica e affascinante, con l'utilizzo della foglia d'oro zecchino o argento.
     </p>
-    <p style="font-family: Arial, sans-serif; line-height: 1.6;">
+    <p style="font-family: Arial, sans-serif; line-height: 1.6;" class="mb-4">
         Ogni pezzo è un viaggio nel tempo, un omaggio alla maestria degli antichi artigiani.
     </p>
 </div>

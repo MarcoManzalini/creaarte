@@ -1,34 +1,29 @@
-<div class="grid gap-4 col-12 mt-4 p-4">
+<div class="grid grid-cols-12 gap-6 col-span-12 mt-6 p-6">
   <div
-    class="col-12 md:col h-full flex flex-column"
+    class="col-span-12 md:col-span-6 h-full flex flex-col"
     style="flex-grow: 1; justify-content: space-between"
   >
-    <div class="w-full mb-4">
-<!--       <app-outlined-button
-        text="Chi Siamo"
-        class="pointer-events-none"
-        [white]="false"
-      /> -->
-      <p class="arboreto text-2xl col-12 md:col">Chi sono</p>
+    <div class="w-full mb-6">
+      <p class="arboreto text-2xl col-span-12 md:col">Chi sono</p>
     </div>
 
     <div
-      class="flex flex-1 flex-column justify-content-between w-full"
+      class="flex flex-1 flex-col justify-between w-full "
       style="flex-grow: 1"
     >
       <!-- Citazione -->
       <div
-        class="quote-icon arboreto flex justify-content-start align-items-start"
+        class="quote-icon arboreto flex justify-start items-start"
         style="font-size: 2.2rem; color: #888"
       >
         “
       </div>
-      <p class="quote-text fadeinup animation-duration-1000">
+      <p class="quote-text animate-fadeinup animate-duration-1000">
         Impara le regole come un professionista, affinché tu possa infrangerle
         come un artista.
       </p>
       <div
-        class="quote-icon arboreto flex justify-content-end align-items-end"
+        class="quote-icon arboreto flex justify-end items-end"
         style="font-size: 2.2rem; color: #888"
       >
         ”
@@ -57,7 +52,7 @@
           text-align: justify;
           font-size: 1rem;
         "
-        class="fadeindown animation-duration-500"
+        class="animate-fadeindown animate-duration-500"
       >
         ​Mi chiamo Alan Mosconi e sono un artigiano con un'esperienza di oltre
         trent'anni in riproduzione di cornici antiche, produzione di cornici
@@ -72,18 +67,7 @@
 
  
   <!-- Sezione immagine -->
-  <div class="col-12 md:col flex justify-content-center align-items-center">
+  <div class="col-span-12  md:col-span-6 flex justify-center items-center">
     <img src="assets/home/chi_sono.jpg" alt="chi siamo"/>
-   <!--  <div
-      class="w-full image-container border-round"
-      style="
-        height: 80dvh;
-        background-image: url('assets/home/chi_sono.jpg');
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
-    ></div> -->
   </div>
 </div>
