@@ -10,6 +10,9 @@
 
 
 :host ::ng-deep .white .p-galleria{
+
+  border-width: 0;
+
     &[role="navigation"]{
         color: black;
     }
