@@ -1,23 +1,27 @@
 @if(openCornice){
-    <p-dialog
-      [header]="openCornice.name"
-      [modal]="true"
-      [(visible)]="openDialog"
-      [style]="{ width: '40rem', 'max-width': '100dvw' }"
-      (visibleChange)="dialogClose.emit($event)"
-    >
-      <div
-        class="w-full flex justify-content-center align-items-center border-round"
-        style="overflow-x: hidden;"
-      >
-        <p-image [src]="openCornice.url" [preview]="true" alt="Image" [style]="{'max-width':'100%'}"/>
-      </div>
-    
-      <div>
-        <p>
-          {{ openCornice.subText }}
-        </p>
-      </div>
-    </p-dialog>
-    }
-    
+<p-dialog
+  [header]="openCornice.name"
+  [modal]="true"
+  [(visible)]="openDialog"
+  [style]="{ width: '40rem', 'max-width': '100dvw' }"
+  (visibleChange)="dialogClose.emit($event)"
+>
+  <div
+    class="w-full flex justify-center items-center rounded-border"
+    style="overflow-x: hidden"
+  >
+    <p-image
+      [src]="openCornice.url"
+      [preview]="true"
+      alt="Image"
+      [style]="{ 'max-width': '100%' }"
+    />
+  </div>
+
+  <div>
+    <p>
+      {{ openCornice.subText }}
+    </p>
+  </div>
+</p-dialog>
+}

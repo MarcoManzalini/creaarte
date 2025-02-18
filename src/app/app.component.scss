@@ -7,7 +7,7 @@
 
 
 
-:host ::ng-deep .black .p-tabview-nav {
+:host ::ng-deep .black .p-tablist-tab-list {
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
@@ -15,36 +15,38 @@
   color: white;
   border: none;
 
-  a {
+  .p-tablist-active-bar{
+    background: white;
+  }
+
+  button {
     color: white;
     background-color: #1a1a1a;
-
-    &[aria-selected="true"] {
-      border: 2px solid white;
-    }
   }
 }
 
-:host ::ng-deep .white .p-tabview-nav {
+:host ::ng-deep .white .p-tablist-tab-list {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1a1a1a;
   border: none;
 
-  a {
+  .p-tablist-active-bar{
+    background: #1a1a1a;
+  }
+
+  button {
     color: #1a1a1a;
     background-color: none;
-
-    &[aria-selected="true"] {
-      border: 2px solid #1a1a1a;
-    }
   }
 }
 
 
 
-:host ::ng-deep .black .p-carousel-indicators{
+
+
+:host ::ng-deep .black .p-carousel-indicator-list{
 
   button{
       background-color: black;
@@ -59,7 +61,7 @@
   }
 }
 
-:host ::ng-deep .white .p-carousel-indicators{
+:host ::ng-deep .white .p-carousel-indicator-list{
 
   button{
       background-color: white;

@@ -1,20 +1,19 @@
-<div class="w-full border-round p-4" style="height: auto">
+<div class="w-full rounded-border p-6" style="height: auto">
   <!-- Bottone Contatti -->
 
-  <div class="flex justify-content-center mb-4">
-    <!--   <app-outlined-button text="Contatti" [white]="false"  class="pointer-events-none"/> -->
-    <p class="arboreto text-2xl col-12 md:col">Contatti</p>
+  <div class="mb-6">
+    <p class="arboreto text-2xl col-span-12 md:col">Contatti</p>
   </div>
 
   <!-- Sezione principale con Mappa e Contatti -->
-  <div class="grid w-full align-items-center gap-2 mt-3">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center mt-4">
     <!-- Mappa Google -->
-    <div class="col-12 md:col flex justify-content-end">
+    <div class="flex justify-end">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.6460523973965!2d9.09914191266672!3d45.713810496002644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478699555c13a3a5%3A0xd12a7f26f04ab649!2sCREARTE%20di%20Alan%20Mosconi!5e1!3m2!1sit!2sit!4v1731269802368!5m2!1sit!2sit"
         height="400"
         width="100%"
-        class="border-round"
+        class="rounded-border"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -22,17 +21,17 @@
       ></iframe>
     </div>
 
-    <div class="col flex flex-column align-items-between">
+    <div class="flex flex-col align-items-between">
       <p class="arboreto text-xl font-bold mt-0">Crearte di Alan Mosconi</p>
       <p-timeline [value]="events">
         <ng-template pTemplate="marker" let-event>
           @if(event.status.includes('@')){
           <a
             [href]="'mailto:' + event.status"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             <span
-              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+              class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/90"
             >
               <i [class]="event.icon"></i>
             </span>
@@ -40,10 +39,10 @@
           }@else if(event.status.includes('+')){
           <a
             [href]="'tel:' + event.status"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             <span
-              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+              class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/90"
             >
               <i [class]="event.icon"></i>
             </span>
@@ -52,10 +51,10 @@
           <a
             href="https://www.facebook.com/100057733296819/about/?_rdr"
             target="_blank"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             <span
-              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+              class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/90"
             >
               <i [class]="event.icon"></i> </span
           ></a>
@@ -63,16 +62,16 @@
           <a
             href="https://www.instagram.com/alan.mosconi/?hl=it"
             target="_blank"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             <span
-              class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+              class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/90"
             >
               <i [class]="event.icon"></i> </span
           ></a>
           } @default {
           <span
-            class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1 bg-black-alpha-90"
+            class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/90"
           >
             <i [class]="event.icon"></i>
           </span>
@@ -83,14 +82,14 @@
           @if(event.status.includes('@')){
           <a
             [href]="'mailto:' + event.status"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             {{ event.status }}
           </a>
           }@else if(event.status.includes('+')){
           <a
             [href]="'tel:' + event.status"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             {{ event.status }}
           </a>
@@ -98,7 +97,7 @@
           <a
             href="https://www.facebook.com/100057733296819/about/?_rdr"
             target="_blank"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             {{ event.status }}
           </a>
@@ -106,7 +105,7 @@
           <a
             href="https://www.instagram.com/alan.mosconi/?hl=it"
             target="_blank"
-            class="no-underline text-black-alpha-90"
+            class="no-underline text-black/90"
           >
             {{ event.status }}
           </a>

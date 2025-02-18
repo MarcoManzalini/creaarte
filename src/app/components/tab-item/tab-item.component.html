@@ -1,6 +1,6 @@
 <div
   (click)=" this.dialogVisible = dialogOpen ;"
-  class="border-round pt-3 px-3 flex flex-column justify-content-between md:m-4 cursor-pointer"
+  class="rounded-border pt-4 px-4 flex flex-col justify-between md:m-6 cursor-pointer"
   [style]="
     'background: url(' +
     ((isPhone && tabData.phoneUrl) ? tabData.phoneUrl : tabData.url) +
@@ -8,7 +8,7 @@
   "
   style="height: 50dvh; max-width: 100%"
 >
-  <div class="w-full flex justify-content-between">
+  <div class="w-full flex justify-between">
     <!-- <app-outlined-button [text]="tipo" [rounded]="false" /> -->
     @if(dialogOpen){
     <app-outlined-button
@@ -20,8 +20,8 @@
   </div>
 
   <div>
-    <p class="arboreto  text-2xl" [class]="white ? 'text-white' : ''">{{ tabData.name }}</p>
-    <p class="md:h-3rem text-white">{{ tabData.subText }}</p>
+    <p class="arboreto  text-2xl mb-4" [class]="white ? 'text-white' : ''">{{ tabData.name }}</p>
+    <p class="md:h-20 text-white text-sm">{{ tabData.subText }}</p>
   </div>
 </div>
 

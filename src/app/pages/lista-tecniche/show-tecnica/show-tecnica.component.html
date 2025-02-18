@@ -1,12 +1,11 @@
-<div class="sm:grid sm:gap-4 sm:m-4">
-  @if(inversed){
-    <div class="bg-black-alpha-90 sm:col-12 grid sm:gap-4 border-round">
-    <app-outlined-button
+<div class="sm:grid sm:gap-6 sm:m-6">
+    <div class="bg-black/90 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 rounded-border p-4">
+      <app-outlined-button
       [white]="inversed"
       [text]="tecnica.nome"
-      class="col-12 pointer-events-none"
+      class="md:col-span-2 pointer-events-none"
     />
-    <div class="col-12 md:col border-round">
+    <div >
       <p-galleria
         [value]="tecnica.immagini"
         [showIndicators]="true"
@@ -20,45 +19,16 @@
         <ng-template pTemplate="item" let-item>
           <img 
           [src]="item" 
-          class="image-container border-round"
+          class="image-container "
           style="width: 100%; display: block;object-fit: contain;" />
         </ng-template>
       </p-galleria>
     </div>
-    <div class="col-12 md:col border-round p-1">
+    <div class="rounded-border p-1">
       <p
         class="text-white"
         [innerHTML]="descrizioneSanitezed(tecnica.descrizione)"
       ></p>
     </div>
   </div>
-  }@else {
-  <app-outlined-button
-    [white]="inversed"
-    [text]="tecnica.nome"
-    class="col-12 pointer-events-none"
-  />
-  <div class="col-12 md:col border-round p-1">
-    <p [innerHTML]="descrizioneSanitezed(tecnica.descrizione)"></p>
-  </div>
-
-  <div class="col-12 md:col border-round">
-    <p-galleria
-      [value]="tecnica.immagini"
-      [showIndicators]="true"
-      [showItemNavigators]="true"
-      [showThumbnails]="false"
-      [autoPlay]="true"
-      [circular]="true"
-      class="black"
-    >
-      <ng-template pTemplate="item" let-item>
-        <img 
-        [src]="item" 
-        class="image-container border-round"
-        style="width: 100%; display: block;" />
-      </ng-template>
-    </p-galleria>
-  </div>
-  }
 </div>

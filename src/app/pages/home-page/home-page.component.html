@@ -1,24 +1,36 @@
-<app-hero id="hero" [images]="isPhone  ? homePageData.mobileHeroImages : homePageData.heroImages"></app-hero>
+<app-hero
+  id="hero"
+  [images]="isPhone ? homePageData.mobileHeroImages : homePageData.heroImages"
+></app-hero>
 <app-chi-siamo id="chi-siamo"></app-chi-siamo>
 
 <!--Cornici-->
 <div
   id="cornici"
-  class="w-full bg-black-alpha-90 border-round p-4"
+  class="w-full bg-black/90 rounded-border p-6"
   style="height: auto"
 >
   <!--  <app-outlined-button text="Cornici"  class="pointer-events-none"/> -->
-  <div class="w-full grid justify-content-between">
-    <p class="arboreto text-2xl text-white-alpha-90 col-12 md:col">Cornici</p>
-    <div class="col flex justify-content-end">
-      <p class="text-gray-400 col-12 md:w-8 text-xl md:text-base">
-        Crearte è un laboratorio specializzato nella produzione di cornici artigianali e nella realizzazione di cornici personalizzate su richiesta o esigenza del Cliente. Ogni cornice è un pezzo unico, lavorato a mano con passione e maestria, per garantire un risultato che rispetti la storia e l'originalità dell'opera.
+  <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
+    <p class="arboreto text-2xl text-white/90 ">Cornici</p>
+    <div class="col flex justify-end">
+      <p class="text-gray-400  md:w-8/12 text-base md:text-sm mb-4">
+        Crearte è un laboratorio specializzato nella produzione di cornici
+        artigianali e nella realizzazione di cornici personalizzate su richiesta
+        o esigenza del Cliente. Ogni cornice è un pezzo unico, lavorato a mano
+        con passione e maestria, per garantire un risultato che rispetti la
+        storia e l'originalità dell'opera.
       </p>
     </div>
   </div>
-  <app-carousel [sections]="homePageData.corniciTab" [white]="false" [tabs]="false" [navigators]="!isPhone"/>
+  <app-carousel
+    [sections]="homePageData.corniciTab"
+    [white]="false"
+    [tabs]="false"
+    [navigators]="!isPhone"
+  />
 
-  <div class="w-full flex justify-content-center align-items-center">
+  <div class="w-full flex justify-center items-center">
     <app-outlined-button
       link="cornici"
       text="Scopri di più"
@@ -28,12 +40,12 @@
 </div>
 
 <!--Tecniche-->
-<div id="tecniche" class="w-full border-round p-4" style="height: auto">
+<div id="tecniche" class="w-full rounded-border p-6" style="height: auto">
   <!--  <app-outlined-button text="Tecniche" [white]="false"  class="pointer-events-none"/> -->
-  <div class="w-full grid justify-content-between">
-    <p class="arboreto text-2xl col-12 md:col">Tecniche</p>
-    <div class="col flex justify-content-end">
-      <p class="col-12 md:w-8 text-xl md:text-base">
+  <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
+    <p class="arboreto text-2xl">Tecniche</p>
+    <div class="flex justify-end">
+      <p class="md:w-8/12 text-xl md:text-sm mb-4">
         Scopri l’eccellenza di un artigiano che padroneggia le tecniche di
         doratura, restauro e intaglio. Ogni intervento combina tradizione e
         precisione per ridare vita a cornici storiche o creare pezzi unici che
@@ -41,9 +53,13 @@
       </p>
     </div>
   </div>
-  <app-carousel [sections]="homePageData.tecnicheTab" [white]="false" [tabs]="false"/>
+  <app-carousel
+    [sections]="homePageData.tecnicheTab"
+    [white]="false"
+    [tabs]="false"
+  />
 
-  <div class="w-full flex justify-content-center align-items-center">
+  <div class="w-full flex justify-center items-center">
     <app-outlined-button
       link="tecniche"
       text="Scopri di più"

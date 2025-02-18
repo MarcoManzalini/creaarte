@@ -1,21 +1,22 @@
-<p-menubar class="bg-white sticky top-0 z-2" [style]="{ border: 'none', background: 'white' }" [model]="items">
+<p-menubar
+  class="bg-white sticky top-0 z-20"
+  [style]="{ border: 'none', background: 'white' }"
+  [model]="items"
+>
   <ng-template pTemplate="start">
-    <div class="flex align-items-center gap-1">
-      <div class="h-2rem w-2rem">
-        <img src="crearte.jpg" alt="logo" width="30px" height="30px"/>
+    <div class="flex items-center gap-1">
+      <div class="h-8 w-8">
+        <img src="crearte.jpg" alt="logo" width="50" height="50" />
       </div>
-      <div class="flex flex-column">
+      <div class="flex flex-col text-sm">
         <span>CreArte</span>
         <span>di Alan Mosconi</span>
       </div>
     </div>
   </ng-template>
 
-  <ng-template pTemplate="item" let-item>
-    <a 
-      
-      [href]="item.route" 
-      class="p-menuitem-link bock lg:hidden">
+  <ng-template #item let-item>
+    <a [href]="item.route" class="block lg:hidden">
       <span class="ml-2">{{ item.label }}</span>
     </a>
   </ng-template>
@@ -23,10 +24,13 @@
   <!-- Menu desktop -->
   <ng-template pTemplate="end">
     <div class="hidden lg:block">
-      <p-menubar [model]="items" [style]="{ border: 'none', background: 'white' }">
-        <ng-template pTemplate="item" let-item>
-          <a [href]="item.route" class="p-menuitem-link">
-            <span class="ml-2">{{ item.label }}</span>
+      <p-menubar
+        [model]="items"
+        [style]="{ border: 'none', background: 'white' }"
+      >
+        <ng-template #item let-item>
+          <a [href]="item.route" class="p-menuitem-link p-3">
+            <span class="ml-2 p-3">{{ item.label }}</span>
           </a>
         </ng-template>
       </p-menubar>
