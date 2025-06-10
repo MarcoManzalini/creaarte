@@ -18,7 +18,7 @@ export class NavbarComponent {
       route: '#hero'
     },
     {
-      label: 'Chi siamo',
+      label: 'Chi sono',
       route: '#chi-siamo'
     },
     {
