@@ -228,6 +228,20 @@ const cornici: Cornice[] = [
     immagine: 'assets/cornici/cornici_28.jpg',
     descrizione: '',
   },
+   {
+    id: 29,
+    nome: 'Decò argento fino rigata',
+    epocaId: 2,
+    immagine: 'assets/cornici/cornici_29.jpg',
+    descrizione: '',
+  },
+   {
+    id: 30,
+    nome: 'Decò argento fino rigata',
+    epocaId: 2,
+    immagine: 'assets/cornici/cornici_30.jpg',
+    descrizione: '',
+  },
   {
     id: 31,
     nome: 'Impero morandi',
@@ -256,6 +270,13 @@ const cornici: Cornice[] = [
     immagine: 'assets/cornici/cornici_34.jpg',
     descrizione: '',
   },
+   {
+    id: 35,
+    nome: 'Spagnola oro nero',
+    epocaId: 2,
+    immagine: 'assets/cornici/cornici_35.jpg',
+    descrizione: '',
+  },
   {
     id: 36,
     nome: 'Spagnola oro nero',
@@ -263,6 +284,63 @@ const cornici: Cornice[] = [
     immagine: 'assets/cornici/cornici_36.jpg',
     descrizione: '',
   },
+  {
+  id: 37,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_37.jpg',
+  descrizione: '',
+},
+{
+  id: 38,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_38.jpg',
+  descrizione: '',
+},
+{
+  id: 39,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_39.jpg',
+  descrizione: '',
+},
+{
+  id: 40,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_40.jpg',
+  descrizione: '',
+},
+{
+  id: 41,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_41.jpg',
+  descrizione: '',
+},
+{
+  id: 43,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_43.jpg',
+  descrizione: '',
+},
+{
+  id: 44,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_44.jpg',
+  descrizione: '',
+},
+{
+  id: 45,
+  nome: 'Spagnola oro nero',
+  epocaId: 2,
+  immagine: 'assets/cornici/cornici_45.jpg',
+  descrizione: '',
+},
+
 ];
 
 
