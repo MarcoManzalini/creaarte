@@ -320,13 +320,6 @@ const cornici: Cornice[] = [
   descrizione: '',
 },
 {
-  id: 43,
-  nome: 'Spagnola oro nero',
-  epocaId: 2,
-  immagine: 'assets/cornici/cornici_43.jpg',
-  descrizione: '',
-},
-{
   id: 44,
   nome: 'Spagnola oro nero',
   epocaId: 2,
